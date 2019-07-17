@@ -1,0 +1,98 @@
+/* Footer CSS */
+/* - Desktop */
+/* - Mobile */
+
+/*** Desktop ***/
+footer{
+	position: relative;
+  background-color: #0e3273;
+  padding-top: 20px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  text-align: right;
+  z-index: 102;
+}
+
+footer .copy-wrapper{
+	position: relative;
+  float: left;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+footer .copy-wrapper{
+	position: relative;
+  float: left;
+  margin-left: 40px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+footer .copy-wrapper svg{
+  float: left;
+  height: 18px;
+}
+
+footer .copy-wrapper p{
+  float: left;
+	margin-left: 20px;
+	width: auto;
+}
+
+footer a{
+	cursor: pointer;
+  display: inline-block;
+  margin-right: .5rem;
+  font-size: 1.5rem;
+  color: #eee;
+  line-height: 0rem;
+  margin-left: .5rem;
+  margin-top: -5px;
+  padding-left: 0em;
+}
+footer a:hover{
+  color: #3D81FF;
+}
+
+@media screen and (max-width: 1280px) {
+  footer a{
+    margin-right: 1em;
+    margin-left: 0;
+  }
+}
+
+footer span, footer nav{
+	display: inline-block;
+  position: relative;
+  margin-right: 40px;
+}
+
+/*** Mobile ***/
+@media screen and (max-width: 992px) {
+  footer{
+    position: relative;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 1em;
+    text-align: center;
+    z-index: 102;
+    display: block;
+  }
+  footer nav{
+    margin-right: auto;
+  }
+  footer .copy-wrapper{
+    width: 100%;
+    margin: 0;
+  }
+  footer .copy-wrapper svg{
+    float: none;
+  }
+  footer a, footer span{
+    cursor: pointer;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+  }
+}

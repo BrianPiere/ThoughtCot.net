@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Overpass" media="none" onload="if(media!='all')media='all'">
+    <noscript><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Overpass"></noscript>
+    <link rel='stylesheet' href='/stylesheets/all.css' />
+    <link rel='stylesheet' href='/stylesheets/main.css' />
+    <script src="/javascripts/main.js"></script>
+  </head>
+  <body>
+  	<header>
+  		<% include ./../public/templates/partials/header %>
+  	</header>
+    <% include ./../public/templates/home/top-section %>
+  	<% include ./../public/templates/home/section-content-1 %>
+  	<% include ./../public/templates/home/section-content-2 %>
+  	<% include ./../public/templates/home/section-content-3 %>
+    <% include ./../public/templates/home/section-content-4 %>
+    <footer>
+  		<% include ./../public/templates/partials/footer %>
+  	</footer>
+  </body>
+</html>

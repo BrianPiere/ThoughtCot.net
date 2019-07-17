@@ -1,0 +1,93 @@
+.list-title{
+  padding-left: 40px;
+}
+
+.boxed-list{
+  list-style: none;
+  display: flex;
+  position: relative;
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+}
+
+.boxed-list li{
+  list-style: none;
+  width: 200px;
+  background: rgba(0,0,0,.6);
+  padding: 20px 100px 20px;
+  border-radius: 5px;
+  margin: 10px;
+  min-height: 100px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,.8);
+}
+
+.boxed-list li:before{
+  position: absolute;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  bottom: 10px;
+  right: 10px;
+  content: "\f0a3";
+  color: black;
+  font-size: 30px;
+  opacity: .4;
+}
+
+.boxed-list li p{
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  margin: auto;
+  width: 90%;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+}
+
+.lg-list{
+  font-size: 1.2rem;
+}
+
+.lg-list li{
+  margin-bottom: 5px;
+}
+
+.icon-list li{
+  list-style: none;
+  position: relative;
+}
+
+.icon-list.success-icon li:before{
+  color: #7acc96;
+}
+
+.icon-list li:before{
+  position: absolute;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 15px;
+  top: 5px;
+  left: -20px;
+}
+
+.checked li:before{
+  content: "\f00c";
+}
+
+.problems li:before{
+  content: "\f06d";
+}
+
+.solutions li:before{
+  left: -30px;
+  content: "\f462";
+}
+
+@media only screen and (max-width: 992px) {
+  .boxed-list{
+    padding: 0;
+  }
+  .icon-list, .list-title{
+    padding-left: 25px;
+  }
+}

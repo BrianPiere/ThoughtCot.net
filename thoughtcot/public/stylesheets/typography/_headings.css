@@ -1,0 +1,59 @@
+/*** Font Color ***/
+
+.inverted{
+	color: #fff;
+}
+
+.muted{
+	color: #aaa;
+}
+
+.active{
+  color: #3d81ff;
+}
+
+.success{
+	color: #7acc96;
+}
+
+.danger{
+	color: #ff6464;
+}
+
+.warning{
+	color: #ffAA64;
+}
+
+.text-center{
+	text-align: center;
+}
+
+/*** Font Allignment ***/
+
+.text-center{
+	text-align: center
+}
+
+.text-left{
+	text-align: left;
+}
+
+.text-right{
+	text-align: right;
+}
+
+@media screen and (max-width: 992px) {
+	.text-center-sm{
+		text-align: center;
+	}
+}
+
+/*** Allignment ***/
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
