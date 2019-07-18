@@ -1,0 +1,28 @@
+{
+	"domains": [
+		{
+			"domainName": "About The HIPI",
+			"dialogs": [
+				{
+					"message": "The Human Intelligence Protocol Interface (HIPI) is designed to help humans collaborate in the most effective manner.\n\nRead about the fundamentals here...\nhttps://medium.com/@TheDreamWeaver/truth-by-default-is-a-game-changer-for-humanity-f7eaae67700a",
+					"dialogs": [
+						{
+							"message": "How does it work?",
+							"dialogs": [
+								{
+									"message": "Imagine that someone wants to edit a public statement that was created by someone else.  First they would have to contradict the existing entry using the CANT/CUZ protocol.  Then they would simply add something new in its place which is relatively free of mistakes.\n\nOver time the system grows more intelligent because the database of contradictions is timeless. In other words, there is now a way to automate mistake-avoidance in text.  \n\nJust as important, the system helps users say things which CAN be said when auto-completions are the survivors of previous CANT's."
+								}
+							]
+						}
+					]
+				},
+				{
+					"message": "Here's another Base Message in 'Construction Mode'. It won't move into first place until the height of the dialog tree is greater than any of its siblings. ",
+					"dialogs": [
+					]
+				}
+			]
+		}
+	],
+	"selectedDomain": "About The HIPI"
+}
