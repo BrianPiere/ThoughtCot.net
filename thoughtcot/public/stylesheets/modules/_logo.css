@@ -1,0 +1,78 @@
+.logo-lg svg{
+	height: 100px;
+}
+.logo {
+	position: relative;
+	padding-left: 32px;
+	font-size: 1.5rem;
+	color: #fff;
+
+}
+.logo:before{
+  content: '';
+  position: absolute;
+  left: -10px;
+  height: 50px;
+  top: -15px;
+  width: 50px;
+  background: url(/images/thought-logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/***
+.logo:before{
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 400;
+	position: absolute;
+	left: 17px;
+	top: 6px;
+	content: "\f0eb";
+	transform: rotateY(180deg) rotate(-26deg);
+}
+.logo:after{
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 400;
+	position: absolute;
+	left: 0px;
+	top: 6px;
+	content: "\f0eb";
+	transform: rotate(-26deg);
+}***/
+
+@media only screen and (max-width: 992px) { 
+	.logo{
+    position: relative;
+    padding-left: 40px;
+    font-size: 1.5rem;
+    color: #fff;
+    top: 0;
+    line-height: 39px;
+    display: inline-block;
+	}
+	.logo svg{
+		height: 48px;
+    width: 165px;
+    vertical-align: middle;
+	}
+	.logo:before{
+		font-family: 'Font Awesome 5 Free';
+		font-weight: 400;
+		position: absolute;
+		left: 28px;
+		top: 5px;
+		content: "\f0eb";
+		transform: rotateY(180deg) rotate(-26deg);
+	}
+	.logo:after{
+		font-family: 'Font Awesome 5 Free';
+		font-weight: 400;
+		position: absolute;
+		left: 12px;
+		top: 5px;
+		content: "\f0eb";
+		transform: rotate(-26deg);
+	}
+}
+
+

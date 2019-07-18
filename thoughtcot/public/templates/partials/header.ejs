@@ -1,0 +1,28 @@
+<div id="nav-desktop" class="nav-wrapper hidden-sm">
+	<nav class="nav-logo-container">
+		<a class="logo" href="/">
+			<% include logo %>
+		</a>
+	</nav>
+	<nav class="nav-menu-container">
+		<a onclick="smoothScroll('learn-more');" class="nav-item link2 inverted">LEARN MORE</a>
+		<a onclick="smoothScroll('our-vision');" class="nav-item link2 inverted">OUR VISION</a>
+		<a onclick="smoothScroll('team');" class="nav-item link2 inverted">TEAM</a>
+	</nav>
+</div>
+<div id="nav-mobile" class="nav-wrapper  nav-mobile hidden-lg">
+  <a class="logo" href="/">
+  	<% include logo %>
+  </a>
+	<a class="nav-menu-btn" onClick="openMobileMenu();">
+    <img src="./images/menu-icon.png" />
+    </a>
+    <div id="mobile-menu" class="nav-menu text-left hidden-lg">
+        <div class="mobile-menu-wrapper">
+            <a class="nav-close-btn" onClick="closeMobileMenu();" ><img src="./images/close-icon.png"></a>
+            <a onclick="closeMobileMenu();smoothScroll('learn-more');" class="nav-item sm-btm active">LEARN MORE</a>
+						<a onclick="closeMobileMenu();smoothScroll('our-vision');" class="nav-item sm-btm active">OUR VISION</a>
+						<a onclick="closeMobileMenu();smoothScroll('team');" class="nav-item sm-btm active">TEAM</a>
+        </div>
+    </div>
+</div>

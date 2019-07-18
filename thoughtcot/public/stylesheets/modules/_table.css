@@ -1,0 +1,13 @@
+.flex-table-header{
+	background: #444;
+}
+
+.flex-table-header p, .flex-table-row p{
+	line-height: 2;
+	padding: 0 10px;
+}
+
+.flex-table-row{
+	background: rgba(0,0,0,.2);
+  border-bottom: 1px solid;
+}

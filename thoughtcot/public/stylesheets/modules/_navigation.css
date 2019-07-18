@@ -1,0 +1,219 @@
+/*** Mixins ***/
+
+@keyframes slide-up {
+  100% { transform: translateY(-100%); }
+}
+
+@-webkit-keyframes slide-up {
+  100% { -webkit-transform: translateY(-100%); }
+}
+
+@keyframes slide-nav-up {
+  0% { transform: translateY(60px); }
+  100% { transform: translateY(0%); }
+}
+
+@-webkit-keyframes slide-up {
+  100% { -webkit-transform: translateY(0); }
+}
+
+@keyframes slide-in {
+  100% { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes slide-in {
+  100% { -webkit-transform: translateX(-100%); }
+}
+    
+@keyframes slide-out {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-out {
+  0% { -webkit-transform: translateX(-100%); }
+  100% { -webkit-transform: translateX(0%); }
+}
+
+
+/*** Navigation Bar Styles ***/ 
+
+.nav-wrapper{
+  position: fixed;
+  background-color: #0e3273;
+  text-align: left;
+  top: 0;
+  left: 0;
+  z-index: 103;
+  width: 100%;
+  transition: left 0.2s ease-out, top 0.2s ease-out, width 0.2s ease-out, height 0.2s ease-out, opacity 0.01s linear 0.2s; 
+  opacity: 1;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+}
+
+.nav-wrapper.centered-logo .nav-logo-container{
+  padding: 17px 40px;
+}
+
+.nav-wrapper .nav-item{
+  padding-right: 2%;
+  padding-left: 2%;
+}
+
+.nav-wrapper .nav-item.active, .nav-wrapper .nav-item:hover{
+  color: #3d81ff;
+}
+
+.nav-wrapper .nav-logo-container{
+  width: auto;
+  display: inline-block;
+  text-align: left;
+  white-space: nowrap;
+  padding: 0 40px;
+}
+
+.nav-wrapper .nav-logo-container img{
+  cursor: pointer;
+  width: 203px;
+  height: 31px;
+  vertical-align: middle;
+}
+
+.nav-wrapper .nav-logo-container svg{
+  height: 48px;
+  width: 165px;
+  vertical-align: middle;
+}
+
+.nav-wrapper .nav-menu-container{
+  width: 40%;
+  display: inline-block;
+}
+
+.nav-wrapper .nav-login-container{
+  width: 30%;
+  display: inline-block;
+  min-width: 300px;
+  text-align: right;
+  float: right;
+  white-space: nowrap;
+  padding-right: 10px;
+}
+
+.nav-wrapper .nav-login-container div{
+  white-space: nowrap;
+}
+
+.share-wrapper a{
+  cursor: pointer;
+  display: inline-block;
+  margin-right: .5rem;
+  font-size: 1.5rem;
+  color: #eee;
+  line-height: 0rem;
+  margin-left: .5rem;
+  margin-top: -5px;
+  padding-left: 0em;
+  width: auto;
+}
+
+@media screen and (min-width: 992px) {
+  .nav-wrapper .nav-item{
+    width: auto;
+    line-height: 64px;
+    padding: 0 20px;
+    text-align: center;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .mobile-menu-wrapper .nav-item{
+    font-size: 16px;
+  }
+}
+
+/*** Navigation Mobile Wrapper ***/
+
+.nav-wrapper.nav-mobile{
+  padding: .6em 0;
+}
+
+.nav-wrapper.nav-mobile .nav-logo{
+  width: 120px;
+  height: 47px;
+  float: left;
+  margin-left: 30px;
+  margin-top: 0px;
+}
+
+.nav-wrapper.nav-mobile .nav-logo svg{
+  margin: 12px 0;
+}
+
+.nav-wrapper.nav-mobile .nav-menu-btn{
+  display: block;
+  position: absolute;
+  right: 0px;
+  text-align: center;
+  float: right;
+  padding: 10px 12px;
+  cursor: pointer;
+  height: 35px;
+  width: 45px;
+  top: 12px;
+}
+
+.nav-wrapper.nav-mobile .nav-menu{
+  position: fixed; 
+  z-index: 10; 
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 4px; 
+  background: white; 
+  left: 100%; 
+  top: 0px; 
+  width: 95%; 
+  height: 100vh; 
+  transition: left 0.2s ease-out, top 0.2s ease-out, width 0.2s ease-out, height 0.2s ease-out, opacity 0.01s linear 0.2s; 
+  opacity: 1;
+  transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+}
+
+.nav-wrapper.nav-mobile .nav-menu .nav-menu-wrapper{
+  overflow: auto;
+}
+
+.nav-wrapper.nav-mobile .nav-menu.open{
+  animation: slide-in 0.25s forwards;
+  -webkit-animation: slide-in 0.25s forwards;
+}
+
+.nav-wrapper.nav-mobile .nav-menu.closed{
+  animation: slide-out 0.25s forwards;
+  -webkit-animation: slide-out 0.25s forwards;
+}
+
+.nav-wrapper.nav-mobile .nav-close-btn{
+  display: block;
+  font-weight: bold;
+  width: 100%;
+  margin-right: 20px;
+  margin-top: 10px;
+  text-align: right;
+  padding: 10px 0px;
+  float: right;
+  cursor: pointer;
+}
+
+.nav-wrapper.nav-mobile .nav-item{
+  display: block;
+  margin-left: 40px;
+  cursor: pointer;
+  width: 100%;
+  float: left;
+}
+
+.nav-wrapper.nav-mobile .nav-item.first-child {
+  margin-top: 0;
+}
