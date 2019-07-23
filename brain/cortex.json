@@ -1,7 +1,7 @@
 {
 	"domains": [
 		{
-			"domainName": "About The HIPI",
+			"domainName": "About Thought Cot",
 			"dialogs": [
 				{
 					"message": "The Human Intelligence Protocol Interface (HIPI) is designed to help humans collaborate in the most effective manner.\n\nRead about the fundamentals here...\nhttps://medium.com/@TheDreamWeaver/truth-by-default-is-a-game-changer-for-humanity-f7eaae67700a",
@@ -17,12 +17,128 @@
 					]
 				},
 				{
-					"message": "Here's another Base Message in 'Construction Mode'. It won't move into first place until the height of the dialog tree is greater than any of its siblings. ",
+					"message": "Since the dawn of time man has endured a serious problem... the inability to intelligently resolve disagreements. This infection has spread far and wide, in our home, across the political spectrum, and within every company.  Collaboration would begin to displace competition and the world would become a much better place if a framework were to emerge for arbitrating discussions; one that's capable of producing unanimous outcomes for any contentious matter. Armed with a collective Bill of Wrongs, Thought Cot, as the world's first \"contradiction provider\", would help guide humanity to a new era that's based on mistake avoidance; approaching but never actually reaching a state of perfection.  Right is redefined as not-wrong under a decentralized framework that's based upon truth-by-default.   The idea is unintuitive, disruptive, and it requires considerable explanation.  However once people start using Thought Cot it will spread like fire for some very good reasons... one of which is that it's nothing less than the best tool to fix our broken world.  Of course the same could be about blockchain technology because it has proven to be one of the missing links for bringing this double-decade dream to reality.",
 					"dialogs": [
+						{
+							"message": "What is Thought Cot?",
+							"dialogs": [
+								{
+									"message": "Thought Cot is a DAPP (decentralized application) designed to help people discover not-wrong ideas within the eyes of the collective.  All DAPP's use blockchain technology to keep an immutable ledger of records which is guaranteed to be tamper-proof.  When it comes to trusting the truth, it's imperative that no single person or organization has the power to censor or manipulate information.  Thought Cot could be considered a platform for debate, but it differs from conventional discussion sites in the following two ways.\n\n1. In today's world, people have become numb to the fact that the same arguments are repeated every hour in the nightly news and across every coffee shop in the country.  Bloggers are accustomed to having great thoughts become buried behind pagination. Computers are supposed to eliminate human repetition and now there's finally an amazing way to accomplish this for collective dialog within a decentralized information system.  Contradictions are able to timelessly transcend the subject from which they were originally conceived when similar context is encountered elsewhere.  This will lead to cross pollination across domains and create alliances around pockets of matching perspectives.  For example, two people quarreling within a lonely topic might say something which triggers a flood of contributors.\n\n2.Thought Cot is based upon a philosophical mechanism that guarantees definitive and unanimous Boolean outcomes without involving votes, moderators, or judges.  Not only are outcomes guaranteed but the \"best outcomes\" will automatically find their way to the top based upon a dialog's tree-depth.   Because outcomes and positioning are handled in fair and automated way, there are very interesting ways to gamify the process of debate.  Specifically, it has become possible for people earn money in proportion with the quality of responses and their trust factor.",
+									"dialogs": [
+										{
+											"message": "How Do Trust and Tokens Relate?",
+											"dialogs": [
+												{
+													"message": "Trust and tokens are the moving pieces which make Thought Cot's world go around.  The tokens are called \"Radiates\" and they're a cryptocurrency built on the Ethereum platform.  Anyone can purchase or trade these tokens outside of the application.  Inside of it they are used for posting bounties in order to raise the visibility of beliefs or questions which the \"originator\" cares about.\n\nOthers can earn a portion of the bounty if they're able to successfully answer the originator's question or bring their belief into doubt.  If the originator does not receive a valid answer or they prevail at defending some statement they will receive back a portion of the bounty.  Otherwise opponents would take a majority of the tokens and distribute them among the authors of the best dialog path in proportion with each of their trust factor percentiles.\n\nBefore explaining how is trust accumulates it's important to know that there are two modes of dialog in the application.",
+													"dialogs": [
+														{
+															"message": "What Are the Two Modes of Dialog Within Thought Cot?",
+															"dialogs": [
+																{
+																	"message": "1. Construction Mode: This is where the originator posts bounties for beliefs or questions at the root of the discussion tree and others try to invalidate or answer them as just described.  In Construction Mode all entries observe a single polarity (an atomic statement) and they will remain visible unless contradicted.  Other than the fact that each entry in a dialog reciprocates between positive/negative (such as question / answer), Assemble Mode would feel very similar using Reddit.\n\n2. Attack Mode:  The way to remove an entry is by attaching a contradiction to it with dual polarity.  Both a CANT and a BECAUSE are required to submit a contradiction which has the power to delete a belief or another contradiction.  Not only does having a CANT provide an invaluable indexing mechanism for the information system, the cadence of CANT/CUZ has an almost magical way of aligning context within the minds of others.  It forces people to concentrate on mistake-avoidance rather than what is believed to be correct.  By winning wars of words in Attack Mode it sends a signal that the user is likely to say things which remain in a state of not-wrong and/or they tend to be reliable at spotting mistakes in others.",
+																	"dialogs": [
+																		{
+																			"message": "How Are Contradictions Recycled Across Diverse Subjects?",
+																			"dialogs": [
+																				{
+																					"message": "Remember that contradictions must contain two inverse parts, a CANT and a BECAUSE.  In order to attack another entry the user must first highlight the smallest region of text in the opponent's entry which represents the mistake.  As mentioned before this serves as an indexing mechanism for the entire pool of contradictions.  If anyone else uses that text (verbatim) within a dialog elsewhere the system will suggest re-using.  For selfish reasons people will try to re-use contradictions whenever possible instead of creating new ones because it leads to the creation of alliances.  Others who have re-used or authored a contradiction may cross over subjects to help like-minded people win their disputes in exchange for \"compounding trust\".\n\nThe negative portion of contradiction (the CANT) is always linked verbatim instead of relying on fuzzy matches.  It's hard for computers to detect similarities, a job much better suited for the human mind.\n\nAnother component which allows verbatim text matching to thrive is the \"auto-complete\" feature.  Whenever a user is typing a message they will be presented with auto-completions representing the CANT's from other contradictions.  For selfish reasons users will strive to select auto-completions whenever possible because it's the best way to have their thoughts reach the broadest audience.  It's also important to mention that whenever a contradiction is contradicted the CANT converts into a CAN which boosts its visibility.",
+																					"dialogs": [
+																						{
+																							"message": "How Does the System Determine Who Wins?",
+																							"dialogs": [
+																								{
+																									"message": "In Assemble Mode there's the concept of the \"best thread\" which is poised receive a distribution of the bounty.  It's automatically determined by the longest pathway through the hierarchy of questions and answers.  If someone disagrees that a thread belongs in first place they can either cut the chain using a well-placed contradiction or they can grow the size of another thread.  The longest surviving question and answer chain should move into first place because it's most likely to abstract and organize the dialog in a way that touches upon everyone's concerns.\n\nWhether in Assembly Mode (to earn tokens) or Attack Mode (to build trust), the last word always wins in what can be called a game of attrition. The victor is determined by checking if the dialog terminates with an even or odd length.  For some time there will be a frequency which leans to one side or another but eventually every dialog will approach a unanimous outcome.  \n\nEven meaningless statements like spam could be used to prevail if it wasn't for the fact that they're easy to contradict themselves.  Users must also pay a small gas fee with every submission which Ethereum cites as being a spam deterrent.  What makes junk even less likely is the concept of compound trust which can wake a sleeping giant and overwhelm pockets of vandals.  If a person isn't likely to prevail then there would be little incentive to start an argument because they would ultimately lose money in the process of strengthening their opponents' trust factors.",
+																									"dialogs": [
+																										{
+																											"message": "How Can Unanimity Be Achieved When the Public is Clearly Polarized?",
+																											"dialogs": [
+																												{
+																													"message": "Judges, moderators, jury members, voters, and every authority have a bias of some kind. Thought Cot's information system is no different, however it's based upon the Human Intelligence Protocol Interface which is permanently biased towards the truth.  That is, every single statement or contradiction observes truth-by-default.  This bias, truth-by-default, is what guarantees a definitive outcome within a game of attrition.  The methodology has a solid philosophical foundation which is why its usefulness can be clearly demonstrated in truly intelligent endeavors, such as putting a man on the moon.  Votes or authority do not determine when it is OK to press the launch button.  The mission begins in a state of true and if any person raises a single contradiction the objective may not move forward until such a contradiction can be contradicted itself.  Unanimity is always achieved at the time of a rocket launch, an endeavor that can be considered overwhelmingly complex by anyone's standard.  The same people who comprise a polarized public also fill the seats within mission control.",
+																													"dialogs": [
+																														{
+																															"message": "Would This Methodology Let Voters Reach Unanimity for Passing Democratic Laws?",
+																															"dialogs": [
+																																{
+																																	"message": "Laws and rights are one in the same and they're what Thought Cot has been designed to help people circumnavigate at a deep philosophical level.  The problem with rights is that they give people permission to commit any mistake which stands in their way.  There's a better way forward for society and it can only be found through unanimous mistake-avoidance on a path to perfection (without ever quite getting there).  If the endeavor is unintelligent, such as pursing the enforcement of a law across a collective it will be extremely difficult, if not impossible to reach total agreement moving forward.  This signals that the objective is flawed and people should look for not-wrong alternative which is why the collective would inevitably push the ultimate outcome towards a unanimous FALSE.",
+																																	"dialogs": [
+																																		{
+																																			"message": "Democracy and System of Laws Have Been Around for Generations. How Could Any Idea Seriously Expect to Change This?",
+																																			"dialogs": [
+																																				{
+																																					"message": "People have a very difficult time seeing things which have yet to occur.  The discovery of a round Earth hundreds of years ago, or foreseeing the advent of Blockchain in the 20th century.  Change is coming whether we'd like to admit it or not and the statuesque, comprised of laws and rights, is no different for the following 5 reasons.  \n\n1. Machines will continue taking away all repetitive chores from their human counterparts. It's already been shown that open source works better for the types of jobs that will remain. This will eventually make taxation infeasible and with it, military, police, and laws.  \n\n2. With the advent of blockchain technology it has become clear that the days of centralized control and authority are numbered because trust can now be distributed across the collective.\n\n3. Once mankind achieves automation and plentifulism for the 5 essentials, food, water, electricity, medicine, and shelter... desperation will be rid from the Earth.  Without desperation there will be little reason for bad guys to exist, especially since the oppressed will finally be able to flee financial restraints.\n\n4. The so called \"bad guys\" will one day be quarantined through decentralized biometric applications, having their own actions used against them until the day they're ready to publicly apologize.\n\n5. The Arab Spring clearly demonstrated that the worst of any regime can be peacefully dismantled by standing for freedom, not fighting for it.  Social networking catalyzed a change that had never been seen before.  An application designed to decentralize and de-censor the truth by means of unanimity will help everyone find the best way to greener pastures.\n\nThere's a lot more to the subjects that were just raised but it would be much easier to continue these dialogs in a structured way when Thought Cot is ready for action.",
+																																					"dialogs": [
+																																						{
+																																							"message": "How Could Unanimity Be Realized Across a Collective for Maybes?",
+																																							"dialogs": [
+																																								{
+																																									"message": "The short answer is that unanimity will always be reached when \"maybes\" are used, but there's not a firm rule to say exactly which way the pendulum will swing.\n\nImagine if someone in mission control said, \"We can't send humans to space because the mission might not succeed.\"   Others would contradict such an objection saying, \"You can't expect to change anyone's mind by expressing that an unforeseen accident could occur because it's intelligent to believe that the mission will succeed unless a concrete problem is presented.\"\n\nOn the other hand, there might be valid reason to consider chance.  For example, \"We can't send this vehicle to space without having the ability to monitor and evade space junk because there's a 20% chance of getting hit inside our target orbit within 2 days.\"",
+																																									"dialogs": [
+																																										{
+																																											"message": "How Could Unanimity Be Realized Across a Collective for Subjective Matters?",
+																																											"dialogs": [
+																																												{
+																																													"message": "If a personal opinion or preference is expressed in a belief, such as \"Blue is the best color\", it might oscillate for a while but eventually it would stabilize on FALSE.   The collective will invariably invalidate such statements because the information system is designed for uncovering unanimous truth in the eyes of the collective, not an individual.  Anyone who argues against this will waste time and strengthen their opponents' trust factors.\n\nOn the flipside, subjective matters can sometimes be important to consider.  For example, \"We can't continue designing an automated hamburger kiosk without the ability to customize fixings because I hate pickles and others love them.\""
+																																												}
+																																											]
+																																										}
+																																									]
+																																								}
+																																							]
+																																						}
+																																					]
+																																				}
+																																			]
+																																		}
+																																	]
+																																}
+																															]
+																														}
+																													]
+																												}
+																											]
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"message": "How does Thought Cot Make Money?",
+											"dialogs": [
+												{
+													"message": "Unlike cloud applications, in which users would surely refuse to pay for submitting their thoughts, they will come to accept that DAPP's require gas when adding records to the blockchain.  This makes it possible for Thought Cot to profit from all activity, rather than relying on annoying advertisements.  Just as with antes on a poker table, it's a small fee to pay for an opportunity to make much more.",
+													"dialogs": [
+														{
+															"message": "What is Thought Cot's Marketing Strategy?",
+															"dialogs": [
+																{
+																	"message": "StackExchange and Reddit receive a great deal of traffic from search engines.  Although the DAPP will be unreachable by search engines, ThoughtCot.net will cache a read-only copy of blockchain.  As the community grows the search engines will continue matching more documents for user queries.  Visitors will be able to navigate ThoughtCot.net much like the DAPP, but they'll lack the ability to contribute.\n\nThought Cot will market and cater to content providers who may create custom channels. Those who amass many followers will be able to start large discussions without posting bounties. Coin drops may be used to draw in thought leaders.\n\nUniversities will remain attractive venues for stimulating interest around this miracle of modern thought."
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
 					]
 				}
 			]
 		}
 	],
-	"selectedDomain": "About The HIPI"
+	"selectedDomain": "About Thought Cot"
 }

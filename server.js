@@ -10,7 +10,7 @@ http.createServer(function (request, response){
 
 	if(request.method == 'POST'){
 
-		var postFileNameAndPath = path.join(__dirname, path.dirname(request.url), path.basename(request.url));
+		var postFileNameAndPath = path.join(__dirname, path.dirname(request.url), path.basename(request.url)).replace(/\?.*$/, "");
 
 		console.log("About to write the POST body to the filename: " + postFileNameAndPath);
 
@@ -63,6 +63,10 @@ http.createServer(function (request, response){
 
 			case '.js':
 				contentType = 'text/javascript';
+				break;
+
+			case '.ico':
+				contentType = 'image/x-icon';
 				break;
 
 			case '.css':
