@@ -15,11 +15,11 @@ postInit(function(){
 			retHtml = "There aren't any dialogs to map on this domain.";
 		}
 		else{
-			retHtml = 	"<form class='map-form' id='map-form"+stateSlicesObj.mapInstanceUniqueId+"'>" + 
-							"<span class='map-links-checkbox-wrapper'><input type='checkbox' class='map-links-checkbox' id='map-links-checkbox"+stateSlicesObj.mapInstanceUniqueId+"' "+ (stateSlicesObj.showSymbolicLinksOnMap ? " checked='checked' " : "") +" /> Display Symbolic Links</span>" +
-							"<input type='text' class='map-search-input' id='map-search"+stateSlicesObj.mapInstanceUniqueId+"' value='' placeholder='Keyword Search' />" +
+			retHtml = 	"<form class='map-form map-form sm-top sm-btm xs-right xs-left light-blue-bck' id='map-form"+stateSlicesObj.mapInstanceUniqueId+"'>" + 
+							"<span class='map-links-checkbox-wrapper'><input type='checkbox' class='map-links-checkbox' id='map-links-checkbox"+stateSlicesObj.mapInstanceUniqueId+"' "+ (stateSlicesObj.showSymbolicLinksOnMap ? " checked='checked' " : "") +" /> Display <span class='hidden-sm'>Symbolic</span> Links</span>" +
+							"<input type='text' class='map-search-input input-field' id='map-search"+stateSlicesObj.mapInstanceUniqueId+"' value='' placeholder='Keyword Search' />" +
 						"</form>" +
-						"<div class='map-container' id='map-container"+stateSlicesObj.mapInstanceUniqueId+"' style='height:100px; width:100px;'>" + 
+						"<div class='sm-top sm-btm'><div class='map-container sm-top sm-btm' id='map-container"+stateSlicesObj.mapInstanceUniqueId+"' style='height:100px; width:100px;'>" + 
 							componentObj.mapRowOrColumnObj.generateHtml() +
 							"<svg class='map-svg-container' width='1' height='1' id='map-svg-container"+stateSlicesObj.mapInstanceUniqueId+"' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>" +
 								'<defs>' +
@@ -38,7 +38,7 @@ postInit(function(){
 									'</filter>' +
 								'</defs>'+
 							"</svg>"+
-						"</div>";
+						"</div></div>";
 		}
 
 		return retHtml;

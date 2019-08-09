@@ -14,7 +14,9 @@ postInit(function(){
 		else
 			var dialogWrapperClassName = "trusting-dialog";
 
-		var retHtml = "<div class='dialog-wrapper "+dialogWrapperClassName+"'>";
+		var retHtml = "<div class=''>";
+
+		retHtml += "<div class='dialog-wrapper flex-row "+dialogWrapperClassName+"'>";
 
 		var previousDialogPositionChain = "";
 		var nextDialogPositionChain = "";
@@ -25,14 +27,16 @@ postInit(function(){
 		if((stateSlicesObj.selectedMessagePosition +1) < stateSlicesObj.childDialogPositionsArr.length)
 			nextDialogPositionChain += stateSlicesObj.childDialogPositionsArr[stateSlicesObj.selectedMessagePosition+1];
 
-		retHtml += "<dialogNavigation "+ 
+		retHtml += "<div class='col-flex-1 dark-blue-bck text-center'><dialogNavigation "+ 
 						"domain='"+componentPropertiesObj.domain+"' " + 
 						"currentDialogPositionChain='"+stateSlicesObj.childDialogPositionsArr[stateSlicesObj.selectedMessagePosition]+"' "+
 						"previousDialogPositionChain='"+previousDialogPositionChain+"' "+
 						"nextDialogPositionChain='"+nextDialogPositionChain+"' "+
-						"></dialogNavigation>";
+						"></dialogNavigation></div>";
 
-		retHtml += "<dialog domain='"+componentPropertiesObj.domain+"' dialogPositionChain='"+stateSlicesObj.childDialogPositionsArr[stateSlicesObj.selectedMessagePosition]+"'></dialog>";
+		retHtml += "<div class='col-flex-11 light-gray-bck'><dialog domain='"+componentPropertiesObj.domain+"' dialogPositionChain='"+stateSlicesObj.childDialogPositionsArr[stateSlicesObj.selectedMessagePosition]+"'></dialog></div>";
+
+		retHtml += "</div>";
 
 		retHtml += "</div>";
 

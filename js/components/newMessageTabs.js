@@ -14,10 +14,10 @@ postInit(function(){
 
 			var classExtension = HIPI.lib.Dialogs.isDialogLevelSkeptical(componentPropertiesObj.dialogPositionChain) ? "trusting" : "skeptical";
 
-			var retHtml = "<nav class='tabs-nav'>" +
-							"<ul>" +
-								"<li><a class='"+(stateSlicesObj.newMessageSelectedTab === "custom-text" ? "active-nav" : "inactive-nav")+"' id='nav-new-message-custom"+elementIdOfComponentInstanceWrapper+"' href='#'>New Message</a></li>" +
-								"<li><a class='"+(stateSlicesObj.newMessageSelectedTab === "symbolic-link" ? "active-nav" : "inactive-nav")+"' id='nav-new-message-symbolic"+elementIdOfComponentInstanceWrapper+"' href='#'>Link Existing Response</a></li>" +
+			var retHtml = "<nav class='tabs-nav row'>" +
+							"<ul class=''>" +
+								"<li><a class='btn btn-primary "+(stateSlicesObj.newMessageSelectedTab === "custom-text" ? "active-nav" : "inactive-nav")+"' id='nav-new-message-custom"+elementIdOfComponentInstanceWrapper+"' href='#'>New Message</a></li>" +
+								"<li><a class='btn btn-primary "+(stateSlicesObj.newMessageSelectedTab === "symbolic-link" ? "active-nav" : "inactive-nav")+"' id='nav-new-message-symbolic"+elementIdOfComponentInstanceWrapper+"' href='#'><span class='hidden-sm'>Link Existing Response</span><span class='hidden-lg'>Link Response</span></a></li>" +
 							"</ul>" +
 							"</nav>" +
 							"<div class='nav-new-message-bottom-border-"+classExtension+"'></div>" +
@@ -38,9 +38,9 @@ postInit(function(){
 
 		// There isn't a message to respond to when adding a message at the base.
 		if(stateSlicesObj.respondToMessage)
-			retHtml += "<h2 class='respond-to-title'>In Response To ...</h2><div class='new-message-responding-to-message'>" + HIPI.framework.Utilities.htmlizeStringWithLineBreaks(stateSlicesObj.respondToMessage) + "</div>";
+			retHtml += "<h4 class='title respond-to-title sm-top'>In Response To ...</h4><div class='new-message-responding-to-message alert-message'><p class='message-content text-left xs-left xs-right xs-top xs-btm'>" + HIPI.framework.Utilities.htmlizeStringWithLineBreaks(stateSlicesObj.respondToMessage) + "</p></div>";
 		else
-			retHtml += "<h2 class='respond-to-title'>About Base Messages</h2><div class='new-message-responding-to-message'>" + HIPI.framework.Utilities.escapeHtml(HIPI.lib.Language.byKey.baseMessageDescription) + "</div>";
+			retHtml += "<h4 class='title respond-to-title sm-top'>About Base Messages</h4><div class='new-message-responding-to-message alert-message'><p class='message-content text-left xs-left xs-right xs-top xs-btm'>" + HIPI.framework.Utilities.escapeHtml(HIPI.lib.Language.byKey.baseMessageDescription) + "</p></div>";
 
 		return retHtml;
 	});

@@ -28,8 +28,9 @@ postInit(function(){
 			var dialogTitleStr = "Add Skeptical Message / Question";
 		}
 
-		var retHtml = "<div class='new-message-dialog "+perpendicularOrientationClassName+"'>" +
-						"<h2>"+dialogTitleStr+"</h2>" +
+		var retHtml = "<div id="+ elementIdOfComponentInstanceWrapper +" class='new-message-dialog "+perpendicularOrientationClassName+"'>" +
+						"<button class='btn-leave-perpendicular'  id='btn-cancel-new-message"+ elementIdOfComponentInstanceWrapper +"'><i class='fas fa-times'></i></button>" + 
+						"<h4 class='title sm-top sm-btm'>"+dialogTitleStr+"</h4>" +
 						"<newMessageTabs domain='"+componentPropertiesObj.domain+"' dialogPositionChain='"+componentPropertiesObj.dialogPositionChain+"'></newMessageTabs>" +
 						"</div>";
 

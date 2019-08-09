@@ -12,19 +12,19 @@ postInit(function(){
 
 		if(HIPI.lib.Contradictions.isContradictionLevelSkeptical(componentPropertiesObj.contradictionPositionChain)){
 
-			var closeButtonText = ")-:";
+			var closeButtonText = "";
 			var closeButtonTitle = "Concede and close this offensive contradiction window. \nContradictions at odd levels aim to contradict the underlying dialog.";
 			var wrapperClassName = "skeptical-contradiction";
 		}
 		else{
 
-			var closeButtonText = ":-)";
+			var closeButtonText = "";
 			var closeButtonTitle = "Concede and close this defensive contradiction window. \nContradictions at even levels support the underlying dialog.";
 			var wrapperClassName = "trusting-contradiction";
 		}
 
 		var retHtml = "<div class='contradiction-window "+wrapperClassName+"'>" +
-						"<button class='btn-close-contradiction-window' title='"+closeButtonTitle+"' id='btn-close-contradiction-window"+elementIdOfComponentInstanceWrapper+"'>"+closeButtonText+"</button>";
+						"<button class='btn-close-contradiction-window' data-title='"+closeButtonTitle+"' id='btn-close-contradiction-window"+elementIdOfComponentInstanceWrapper+"'>"+closeButtonText+"</button>";
 
 			if(stateSlicesObj.isContradicted){
 

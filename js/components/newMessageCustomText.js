@@ -16,12 +16,12 @@ postInit(function(){
 		else
 			var addMessageButtnStr = "Add Skeptical Response";
 
-		var retHtml = "<form id='form-new-message"+elementIdOfComponentInstanceWrapper+"'>" +
+		var retHtml = "<form id='form-new-message"+elementIdOfComponentInstanceWrapper+"' class='xs-left xs-right sm-top-sm xs-btm-sm'>" +
 							"<textarea class='textarea-new-message' id='textarea-new-message"+elementIdOfComponentInstanceWrapper+"'></textarea>"+
 							"<autoComplete elementIdOfInput='textarea-new-message"+elementIdOfComponentInstanceWrapper+"'></autoComplete>"+
-							"<p>"+
-								"<button type='submit'>"+addMessageButtnStr+"</button> "+
-								"<button type='button' id='btn-cancel-new-message"+elementIdOfComponentInstanceWrapper+"'>Cancel</button>"+
+							"<p class='row'>"+
+								"<button class='btn btn-success btn-inline btn-block-sm' type='submit'>"+addMessageButtnStr+"</button> "+
+								"<button class='btn btn-danger btn-inline btn-block-sm' type='button' id='btn-cancel-new-message"+elementIdOfComponentInstanceWrapper+"'>Cancel</button>"+
 							"</p>"+
 						"</form>";
 

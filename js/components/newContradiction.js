@@ -10,21 +10,20 @@ postInit(function(){
 
 	componentObj.addHtmlGenerator(function(elementIdOfComponentInstanceWrapper, componentPropertiesObj, stateSlicesObj){
 
-		var retHtml = "<h2>Create a New Contradiction</h2>"+
-						"<div class='new-contradiction-wrapper'>" +
+		var retHtml = "<div class='new-contradiction-wrapper light-blue-bck xs-left xs-right'>" +
 						"<form id='form-new-contradiction"+elementIdOfComponentInstanceWrapper+"'>" +
-							"<h3>Cant say ...</h3>" +
-							"<p>Highlight a text-range with your pointer representing the smallest enclosing region of data which cannot be said in light of the reason being provided.</p>" +
+							"<h4 class='title sm-top'>Cant say ...</h3>" +
+							"<p class='sm-btm'>Highlight a text-range with your pointer representing the smallest enclosing region of data which cannot be said in light of the reason being provided.</p>" +
 							"<div class='new-contradiction-cant' id='new-contradiction-cant"+elementIdOfComponentInstanceWrapper+"'>"+HIPI.framework.Utilities.htmlizeStringWithLineBreaks(stateSlicesObj.textToContradict)+"</div>"+
 							"<input type='hidden' id='new-contradiction-cant-hidden"+elementIdOfComponentInstanceWrapper+"' value='' />" +
-							"<h3>Because ...</h3>" +
-							"<p>When you give your reason why, speak in Can't/Because format to achieve maximum effectiveness.  This creates a 2-for-1 inversion which let's you be right about why something else is wrong.</p>" +
+							"<h4 class='title sm-top'>Because ...</h3>" +
+							"<p class='sm-btm'>When you give your reason why, speak in Can't/Because format to achieve maximum effectiveness.  This creates a 2-for-1 inversion which let's you be right about why something else is wrong.</p>" +
 							"<p> EX: <em>You can't say that it's ready for launch because there's still a disagreement about the fuel range.</em></p>" +
 							"<textarea class='textarea-new-contradiction-cuz' id='textarea-new-contradiction-cuz"+elementIdOfComponentInstanceWrapper+"'></textarea>"+
 							"<autoComplete elementIdOfInput='textarea-new-contradiction-cuz"+elementIdOfComponentInstanceWrapper+"'></autoComplete>"+
-							"<p>"+
-								"<button type='submit'>Add</button> "+
-								"<button type='button' id='btn-cancel-new-contradiction"+elementIdOfComponentInstanceWrapper+"'>Cancel</button>"+
+							"<p class='row xs-top xs-btm'>"+
+								"<button class='btn btn-primary btn-inline btn-block-sm' type='submit'>Add</button> "+
+								"<button class='btn btn-danger btn-inline btn-block-sm' type='button' id='btn-cancel-new-contradiction"+elementIdOfComponentInstanceWrapper+"'>Cancel</button>"+
 							"</p>"+
 						"</form>" +
 					"</div>";

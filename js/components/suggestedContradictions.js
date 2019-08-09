@@ -11,11 +11,11 @@ postInit(function(){
 	componentObj.addHtmlGenerator(function(elementIdOfComponentInstanceWrapper, componentPropertiesObj, stateSlicesObj){
 
 		if(!stateSlicesObj.suggestedContradictions.length)
-			return "<div class='suggested-contradictions-none'>No Suggestions Found</div>";
+			return "<div class='alert-message suggested-contradictions-none'><p class='message-content'>No Suggestions Found</p></div>";
 
 		var componentDeclarationForNewWindnowStr = "";
 
-		var retHtml = "<h2>Suggested Contradictions</h2>"+
+		var retHtml = "<h4 class='title'>Suggested Contradictions</h4>"+
 						"<div>Instead of adding something new at this level, accept an existing Contradiction (if relevant) and reach a broader audience.</div>"+
 						"<div class='suggested-contradictions-wrapper'>"+
 							"<div class='suggested-contradictions-list'>";

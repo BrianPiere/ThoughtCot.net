@@ -60,15 +60,15 @@ postInit(function(){
 					contradictedStatusStr = "No, but shadowed by a contradicted ancestor.";
 
 
-				retHtml += "<div class='dialog-properties-details'>" +
-						"<ul>" +
-							"<li><label>Depth:</label> " + stateSlicesObj.depth + "</li>" +
-							"<li><label>Height:</label> " + HIPI.framework.Utilities.getArrayOfIntegersFromCommaSeparatedChain(componentPropertiesObj.dialogPositionChain).length + "</li>" +
-							"<li><label>"+(HIPI.lib.Dialogs.isDialogLevelSkeptical(componentPropertiesObj.dialogPositionChain) ? "Answered" : "Questioned")+":</label> " + (stateSlicesObj.isAnswered ? "Yes" : "No") + "</li>" +
-							"<li><label>Contradicted:</label> " + contradictedStatusStr + "</li>" +
-							"<li><label>Responses:</label> " + stateSlicesObj.responeCount + "</li>" +
-							"<li><label>Link Source:</label> " + outgoingLinksHtml + "</li>" +
-							"<li><label>Incoming Links:</label> " + incomingLinksHtml + "</li>" +
+				retHtml += "<div class='dialog-properties-details light-gray-bck'>" +
+						"<ul class='flex-row'>" +
+							"<li class='col-flex-6'><label>Depth:</label> " + stateSlicesObj.depth + "</li>" +
+							"<li class='col-flex-6'><label>Height:</label> " + HIPI.framework.Utilities.getArrayOfIntegersFromCommaSeparatedChain(componentPropertiesObj.dialogPositionChain).length + "</li>" +
+							"<li class='col-flex-6'><label>"+(HIPI.lib.Dialogs.isDialogLevelSkeptical(componentPropertiesObj.dialogPositionChain) ? "Answered" : "Questioned")+":</label> " + (stateSlicesObj.isAnswered ? "Yes" : "No") + "</li>" +
+							"<li class='col-flex-6'><label>Contradicted:</label> " + contradictedStatusStr + "</li>" +
+							"<li class='col-flex-6'><label>Responses:</label> " + stateSlicesObj.responeCount + "</li>" +
+							"<li class='col-flex-6'><label>Incoming Links:</label> " + incomingLinksHtml + "</li>" +
+							"<li class='col-flex-12'><label>Link Source:</label> " + outgoingLinksHtml + "</li>" +
 						"</ul>" +
 					"</div>";
 			}

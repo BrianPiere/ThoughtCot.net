@@ -1,0 +1,24 @@
+.tabs-nav{
+	height: 46px;
+	overflow: hidden;
+	padding-top: 5px;
+}
+
+.tabs-nav .active-nav{
+	box-shadow: 0 0 2px 2px rgba(61,129,255,.8);
+	border-radius: 0 2px 2px 0;
+	color: rgba(61,129,255,1);
+	background: #f2f6ff;
+}
+
+.tabs-nav-container{
+	padding: 0;
+	box-shadow: 0 0 2px 2px rgba(61,129,255,.8);
+	background: #f2f6ff;
+}
+
+@media screen and (max-width: 992px) {
+  .tabs-nav{
+	height: 46px;
+  }
+}

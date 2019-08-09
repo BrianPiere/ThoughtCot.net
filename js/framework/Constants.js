@@ -24,7 +24,7 @@ Constants.getApplicationFileName = function(){
 
 Constants.getMapRowHeightOrColumnWidthInPixels = function(){
 
-	return 20;
+	return 40;
 };
 
 // These divisors are relative to the Constants.getMapRowHeightOrColumnWidthInPixels().

@@ -8,9 +8,15 @@ postInit(function(){
 
 	componentObj.addHtmlGenerator(function(elementIdOfComponentInstanceWrapper, componentPropertiesObj, stateSlicesObj){
 
-		var retStr = "<header>" +
-					"<img class='logo' src='images/HIPI-Nav-Logo.png' title='Human Intelligence Protocol Interface' alt='HIPI' />" + 
-					"<select id='domainSelectMenu"+elementIdOfComponentInstanceWrapper+"'>";
+		var retStr = "<header >" +
+					"<div class='nav-wrapper'>" +
+					"<nav class='nav-logo-container'>" +
+					"<div class='logo'><img src='images/svg/logo.svg' /></div>" +
+					"</nav>" +
+					"<nav class='nav-menu-container'>" +
+					"<a class='nav-item link2 inverted'>ABOUT US</a>" +
+					"</nav>" +
+					"<select id='domainSelectMenu"+elementIdOfComponentInstanceWrapper+"' class='hidden'>";
 
 						for(var i=0; i<stateSlicesObj.domainNames.length; i++)
 							retStr += "<option "+ (stateSlicesObj.selectedDomain === stateSlicesObj.domainNames[i] ? "selected='selected'" : "" ) +" value='"+stateSlicesObj.domainNames[i]+"'>Domain: "+stateSlicesObj.domainNames[i]+"</option>";
@@ -20,9 +26,14 @@ postInit(function(){
 					"<div class='header-links'>" +
 						"<userSettings></userSettings>"  +
 					"</div>" +
+					"</div>" +
 					"</header>" + 
-					"<div class='poc-message'>This is only a proof of concept. Changes will be lost on refresh.</div>" +
-					"<mainTabs domain='"+stateSlicesObj.selectedDomain+"'></mainTabs>";
+					"<section class='top-section'>" +
+					"<div class='container'>" +
+					"<div class='alert-message poc-message'><p class='message-content'>This is only a proof of concept. Changes will be lost on refresh.</p></div>" +
+					"</div>" +
+					"<mainTabs domain='"+stateSlicesObj.selectedDomain+"'></mainTabs>" +
+					"</section>";
 
 		return retStr;
 	});

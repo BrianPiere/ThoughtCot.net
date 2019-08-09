@@ -1,0 +1,265 @@
+/* Base Layout File */
+/* - Background Variants */
+/* - State Background Variants */
+/* - Standard Spacing Variants */
+/* - Mobile Standard Spacing Variants */
+/* - Alert Message */
+
+p, span, h1, h2, h3, h4, h5, h6, a, ul, li{
+	position: relative;
+	z-index: 10;
+}
+
+a{
+	color: #3d81ff;
+}
+
+input.input-field{
+	line-height: 40px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    min-width: 150px;
+}
+
+/*** Background Variants ***/
+
+.dark-blue-bck{
+	position: relative;
+	background-repeat: repeat;
+	background-image: linear-gradient(rgba(0, 19, 54, 0), rgba(61, 129, 255, 0.4)), linear-gradient(rgb(0, 8, 23), rgb(0, 19, 54));
+	background-color: black;
+}
+
+.light-blue-gradient-bck{
+	background: linear-gradient(206.57deg,rgba(61,129,255,.9),rgba(0,51,143,1)), url(/images/bg-rise.svg);
+	overflow: hidden;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.light-blue-gradient-flat-bck{
+	background: linear-gradient(206.57deg,rgba(61,129,255,.9),rgba(0,51,143,1));
+}
+
+@media screen and (max-width: 1280px) {
+	.light-blue-gradient-bck::before{
+		bottom: -125px;
+	}
+}
+
+.light-blue-gradient-bck.large::before{
+	height: 680px;
+}
+
+.light-gray-gradient-bck{
+	position: relative;
+	background: radial-gradient(rgba(226,236,255,.9),rgba(242,246,255,1));
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+@media screen and (max-width: 992px) {
+	.light-blue-gradient-bck{
+		background:linear-gradient(206.57deg,rgba(48,207,208,.5),rgba(0,31,100,0) 10%,rgba(0,31,100,1)),linear-gradient(206.57deg,#3d81ff,#00338f);
+	}
+	.light-blue-gradient-bck:after{
+		background: none;
+	}
+	.light-gray-gradient-bck::before{
+		transform: rotate(7deg);
+	    top: 880px;
+    	height: 100%;
+	}
+	.blue-bck-sm{
+		position: relative;
+		background-color: #00338F;
+	}
+}
+
+/*** State Background Variants ***/
+
+.inverted-bck{
+	background-color: #fff;
+}
+
+.muted-bck{
+	background-color: #aaa;
+}
+
+.active-bck{
+  background-color: #3d81ff;
+}
+
+.light-gray-bck{
+	background: #f1f1f1;
+}
+
+.dark-gray-bck{
+	background: #444;
+}
+
+.light-blue-bck{
+	background: #f2f6ff;
+}
+
+.dark-blue-bck{
+	background: #0e3273;
+}
+
+.success-bck{
+	background-color: #7acc96;
+}
+
+.danger-bck{
+	background-color: #ff6464;
+}
+
+.warning-bck{
+	background-color: #ffAA64;
+}
+
+/*** Standard Spacing Variants ***/
+
+.xs-btm{
+	padding-bottom: 10px;
+}
+
+.sm-btm{
+	padding-bottom: 20px;
+}
+
+.med-btm{
+	padding-bottom: 40px;
+}
+
+.lg-btm{
+	padding-bottom: 60px;
+}
+
+.xlg-btm{
+	padding-bottom: 80px;
+}
+
+.xs-top{
+	padding-top: 10px;
+}
+
+.sm-top{
+	padding-top: 20px;
+}
+
+.med-top{
+	padding-top: 40px;
+}
+
+.lg-top{
+	padding-top: 60px;
+}
+
+.xlg-top{
+	padding-top: 80px;
+}
+
+.xs-margin-top{
+	margin-top: 10px;
+}
+
+.sm-margin-top{
+	margin-top: 20px;
+}
+
+.med-margin-top{
+	margin-top: 40px;
+}
+
+.lg-margin-top{
+	margin-top: 60px;
+}
+
+.xlg-margin-top{
+	margin-top: 80px;
+}
+
+.xs-left{
+	padding-left: 15px;
+}
+
+.xs-right{
+	padding-right: 15px;
+}
+
+/*** Border Top Sections ***/
+
+.bordered{
+	border-top: 1px solid #EEEEEE;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.bordered-bottom{
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.dark-bordered-bottom{
+	border-bottom: 1px solid #444;
+}
+
+/*** Mobile Standard Spacing Variants ***/
+@media screen and (max-width: 992px) {
+	.no-top-sm{
+		padding-top: 0;
+	}
+	.no-btm-sm{
+		padding-bottom: 0;
+	}
+	.xs-btm-sm{
+		padding-bottom: 10px;
+	}
+
+	.sm-btm-sm{
+		padding-bottom: 20px;
+	}
+
+	.med-btm-sm{
+		padding-bottom: 40px;
+	}
+
+	.lg-btm-sm{
+		padding-bottom: 60px;
+	}
+
+	.xlg-btm-sm{
+		padding-bottom: 80px;
+	}
+
+	.xs-top-sm{
+		padding-top: 10px;
+	}
+
+	.sm-top-sm{
+		padding-top: 20px;
+	}
+
+	.med-top-sm{
+		padding-top: 40px;
+	}
+
+	.lg-top-sm{
+		padding-top: 60px;
+	}
+
+	.xlg-top-sm{
+		padding-top: 80px;
+	}
+}
+@media only screen and (min-width: 720px) {
+	.lg-top-md{
+		padding-top: 60px;
+	}
+	.lg-btm-md{
+		padding-bottom: 60px;
+	}
+}

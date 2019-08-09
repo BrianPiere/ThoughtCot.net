@@ -1,0 +1,103 @@
+.rate-wrapper{
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+
+.trust-ratio-container{
+	position: relative;
+}
+
+.trust-ratio-container label{
+	position: absolute;
+  left: 10px;
+  top: 10px;
+  font-weight: 200;
+  letter-spacing: -.5px;
+  font-size: 24px;
+}
+
+.trust-ratio-container .trust-rate{
+	font-size: 64px;
+  position: absolute;
+  font-weight: 900;
+  right: 15px;
+  top: 20px;
+  letter-spacing: -5px;
+}
+
+.my-contributions-table tr, .my-contributions-table td, .my-contributions-table th{
+	padding: 10px;
+}
+
+@media only screen and (min-width: 992px) {
+	.contributions-properties-details {
+	    margin-left: 10px;
+	}
+	.my-contributions-table tr td:first-child, .my-contributions-table tr th:first-child{
+		min-width: 200px;
+		max-width: 300px;
+	} 
+
+	.my-contributions-table tr td:last-child, .my-contributions-table tr th:last-child{
+		max-width: 140px;
+	} 
+}
+
+.progress-bar-wrapper{
+  position: absolute;
+	left: 5%;
+	top: 100px;
+	width: 90%;
+}
+.progress-bar{
+	position: relative;
+	width: 100%;
+	background: linear-gradient(to right, rgba(245,54,124,1) 0%, rgba(245,226,12,1) 39%, rgba(240,240,24,1) 61%, rgba(55,230,39,1) 100%);
+	height: 30px;
+}
+
+@media only screen and (max-width: 992px) {
+	.trust-ratio-container {
+	    position: relative;
+	    height: 85px;
+	}
+	.trust-ratio-container label {
+	    position: absolute;
+	    left: 20px;
+	    top: 20px;
+	    font-weight: 200;
+	    letter-spacing: -.5px;
+	    font-size: 24px;
+	}
+	.trust-ratio-container .trust-rate {
+	    font-size: 45px;
+	    position: absolute;
+	    font-weight: 900;
+	    right: 15px;
+	    top: 0px;
+	    letter-spacing: -5px;
+	}
+	.progress-bar-pointer{
+	  position: absolute;
+	  top: -3px;
+	  transform: translateX(-50%);
+	  font-size: 24px;
+	  color: black;
+	}
+	.progress-bar-wrapper {
+	    position: absolute;
+	    left: 5%;
+	    top: 60px;
+	    width: 90%;
+	}
+	.my-contributions-table{
+		font-size: 10px;
+	}
+	.my-contributions-table p, .my-contributions-table a{
+		font-size: 10px;
+	}
+	.my-contributions-table tr th:nth-child(3), .my-contributions-table tr td:nth-child(3){
+		display: none;
+	}
+}

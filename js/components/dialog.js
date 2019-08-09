@@ -19,28 +19,17 @@ postInit(function(){
 		dialogWrapperClassNames += stateSlicesObj.isContradicted ? " dialog-level-contradicted" : " dialog-level-uncontradicted";
 		dialogWrapperClassNames += stateSlicesObj.isShadowContradiction ? " dialog-level-shadow-contradiction" : "";
 
-		var retHtml = "<div class='dialog-message "+dialogWrapperClassNames+"'>" + HIPI.framework.Utilities.htmlizeStringWithLineBreaks(stateSlicesObj.message) + "</div>" +
+		var retHtml = "<div class='dialog-message "+dialogWrapperClassNames+" med-top'>" + HIPI.framework.Utilities.htmlizeStringWithLineBreaks(stateSlicesObj.message)  +
+						"<dialogProperties domain='"+componentPropertiesObj.domain+"' dialogPositionChain='"+componentPropertiesObj.dialogPositionChain+"'></dialogProperties>" + "</div>" +
 						"<div class='dialog-commands-wrapper "+perpendicularOrientationClassName+"'>" +
-							"<table cellpadding='0' cellspacing='0' width='100%'>" +
-								"<tr>" +
-									"<td width='33%'>" +
-										"<button id='btn-contradict-dialog"+elementIdOfComponentInstanceWrapper+"'>" + (stateSlicesObj.isContradicted ? "Restore / Un-Contradict" : "Remove / Contradict" ) + "</button>" +
-									"</td>" +
-									"<td width='33%'>";
+							"<button class='btn-icon btn-danger btn-block-sm' id='btn-contradict-dialog"+elementIdOfComponentInstanceWrapper+"' data-title='" + (stateSlicesObj.isContradicted ? "Restore / Un-Contradict" : "Remove / Contradict" ) + "'><i class='far fa-minus-square'></i></button>";
 
-									if(stateSlicesObj.userOwnsMessage)
-											retHtml += "<button class='"+(stateSlicesObj.userCanEditMessage ? "" : 'edit-message-disabled')+"' id='btn-edit-dialog"+elementIdOfComponentInstanceWrapper+"'>Edit</button>";
+						if(stateSlicesObj.userOwnsMessage)
+								retHtml += "<button class='"+(stateSlicesObj.userCanEditMessage ? "" : 'edit-message-disabled')+"' id='btn-edit-dialog"+elementIdOfComponentInstanceWrapper+"'>Edit</button>";
 
-						retHtml += "</td>" +
-									"<td width='33%' align='right'>" +
-										// When a new Dialog is added it should be attached to the parent dialogPositionChain, not the address given in the component properties.
-										"<button id='btn-start-new-parent-dialog"+elementIdOfComponentInstanceWrapper+"'>Add Something Better</button>" +
-									"</td>" +
-								"</tr>" +
-							"</table>" +
-						"</div>";
+						retHtml += "<button class='btn-icon btn-success btn-block-sm' id='btn-start-new-parent-dialog"+elementIdOfComponentInstanceWrapper+"' data-title='Add Something Better'><i class='far fa-plus-square'></i></button>" + 
+								   "</div>";
 
-		retHtml += "<dialogProperties domain='"+componentPropertiesObj.domain+"' dialogPositionChain='"+componentPropertiesObj.dialogPositionChain+"'></dialogProperties>";
 
 		if(stateSlicesObj.showContradictWindow)
 			retHtml += "<contradictionWindow domain='"+componentPropertiesObj.domain+"' dialogPositionChain='"+componentPropertiesObj.dialogPositionChain+"' contradictionPositionChain=''></contradictionWindow>";
@@ -53,13 +42,13 @@ postInit(function(){
 
 			// Invert the responses of "isSkeptical" method calls because going perpendicular adds a half-step. 
 			if(!HIPI.lib.Dialogs.isDialogLevelSkeptical(componentPropertiesObj.dialogPositionChain)){
-				var closeButtonText = ")-:";
+				var closeButtonText = "<i class='fas fa-times'></i>";
 				var closeButtonTitle = "Concede and close this offensive dialog window. \nIt is at an even level which questions or is skeptical of the base dialog message.";
 				var dialogWindowClassName = "skeptical-dialog";
 				var newMessageStr = "Offer the first skeptical response to the message below in an effort to gain answers and/or to discredit the base dialog message.";
 			}
 			else{
-				var closeButtonText = ":-)";
+				var closeButtonText = "<i class='fas fa-times'></i>";
 				var closeButtonTitle = "Concede and close this defensive dialog window. \nIt is at an odd level which is supportive of the base dialog message.";
 				var dialogWindowClassName = "trusting-dialog";
 				var newMessageStr = "Offer the first response to the message below in an effort to support the base dialog message.";
@@ -78,8 +67,8 @@ postInit(function(){
 				retHtml += "<dialogSorter domain='"+componentPropertiesObj.domain+"' dialogPositionChain='"+componentPropertiesObj.dialogPositionChain+"'></dialogSorter>";
 			}
 			else{
-				retHtml += "<div class='dialog-empty-message'>"+newMessageStr+"</div>";
-				retHtml += "<button id='btn-start-new-dialog"+elementIdOfComponentInstanceWrapper+"'>Continue the Dialog</button>";
+				retHtml += "<div class='alert-message dialog-empty-message'><p class='message-content'>"+newMessageStr+"</p></div>";
+				retHtml += "<button id='btn-start-new-dialog"+elementIdOfComponentInstanceWrapper+"' class='btn btn-primary btn-block-sm'>Continue the Dialog</button>";
 			}
 
 			if(stateSlicesObj.showNewMessageDialog)
@@ -127,7 +116,7 @@ postInit(function(){
 				return false;
 			});
 		}
-
+		console.log('id', elementIdOfComponentInstanceWrapper);
 		var leavePerpendicularElem = document.getElementById("btn-leave-perpendicular"+elementIdOfComponentInstanceWrapper);
 		if(leavePerpendicularElem){
 

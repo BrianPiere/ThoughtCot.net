@@ -5,34 +5,45 @@ section{
 	position: relative;
 }
 
-section.top-section{
-	margin-top: 60px;
+.top-section{
+	margin-top: 80px;
 }
 
-section.top-section .share-wrapper a{
+.title{
+  line-height: 1.5;
+}
+
+.top-section .share-wrapper a{
   font-size: 2rem;
   margin-left: .3rem;
   margin-right: .3rem;
   color: #fff;
 }
 
-section.top-section.brand-section{
+.top-section.brand-section{
   text-align: center;
 }
 
-section .content{
+.content{
   z-index: 10;
   position: relative;
 }
 
-section.top-section.brand-section .btn-wrapper{
+.top-section.brand-section .btn-wrapper{
   position: relative;
   z-index: 10;
 }
 
 @media screen and (max-width: 992px) {
+  .top-section{
+    margin-top: 65px;
+  }
   section.top-section.brand-section h1{
     font-size: 24px;
+  }
+  .input-block-sm{
+    width: calc(100% - 20px);
+    margin: 5px 0;
   }
 }
 
@@ -43,11 +54,11 @@ section.top-section.brand-section .btn-wrapper{
   }
 }
 
-section.truth-by-default{
+.truth-by-default{
   position: relative;
 }
 
-section.truth-by-default:before{
+.truth-by-default:before{
   position: absolute;
   font-family: 'Font Awesome 5 Brands';
   font-weight: 400;
@@ -60,7 +71,7 @@ section.truth-by-default:before{
 }
 
 @media screen and (max-width: 992px) {
-  section.truth-by-default:before{
+  .truth-by-default:before{
     position: absolute;
     font-family: 'Font Awesome 5 Brands';
     font-weight: 400;
@@ -75,13 +86,23 @@ section.truth-by-default:before{
     top: 35%;
     bottom: auto;
   }
+  .message-content{
+    padding: 10px 20px;
+  }
+  .dialog-navigation-wrapper{
+    margin-bottom: 5px;
+  }
+  .alert-message .message-content{
+    font-size: 15px;
+  }
 }
+
 
 /*** Alert Message ***/
 
 .alert-message{
   background: #f2f6ff;
-  height: 90px;
+  min-height: 60px;
   width: 100%;
   display: table;
   text-align: center;
@@ -118,4 +139,10 @@ section.truth-by-default:before{
 .alert-message .message-content{
   vertical-align: middle;
     display: table-cell;
+}
+
+.alert-info {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
 }

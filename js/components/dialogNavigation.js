@@ -12,12 +12,12 @@ postInit(function(){
 	componentObj.addHtmlGenerator(function(elementIdOfComponentInstanceWrapper, componentPropertiesObj, stateSlicesObj){
 
 		if(HIPI.lib.Dialogs.isDialogLevelSkeptical(componentPropertiesObj.currentDialogPositionChain)){
-			var choiceText = "Agree ^";
+			var choiceText = "Agree";
 			var dialogWrapperClass = "skeptical-dialog";
 			var navigationText = "Disagree";
 		}
 		else{
-			var choiceText = "Disagree or Unsure ^";
+			var choiceText = "Disagree or Unsure";
 			var dialogWrapperClass = "trusting-dialog";
 			var navigationText = "Agree";
 		}
@@ -27,27 +27,17 @@ postInit(function(){
 		else
 			var choiceClass = "perpendicular-dialog-message-not-exists"
 
-		var retHtml = "<div class='dialog-navigation-wrapper "+dialogWrapperClass+"'>" + 
-							"<table cellpadding='0' cellspacing='0' width='100%'>" +
-							"<tr>" +
-								"<td width='33%'>";
+		var retHtml = "<div class='dialog-navigation-wrapper "+dialogWrapperClass+"'>";
+				
+			if(componentPropertiesObj.previousDialogPositionChain)
+				retHtml += "<button class='btn-icon btn-info btn-prev' targetDialogPosition='"+componentPropertiesObj.previousDialogPositionChain+"' id='btn-dialog-nav-previous"+elementIdOfComponentInstanceWrapper+"' data-title='"+navigationText+" / Previous'><i class='fas fa-arrow-circle-left'></i></button>";
 
-									if(componentPropertiesObj.previousDialogPositionChain)
-										retHtml += "<button targetDialogPosition='"+componentPropertiesObj.previousDialogPositionChain+"' id='btn-dialog-nav-previous"+elementIdOfComponentInstanceWrapper+"'>"+navigationText+" / Previous</button>";
+			retHtml += "<button title='"+HIPI.framework.Utilities.escapeHtml(stateSlicesObj.messageStr)+"' class='btn-icon btn-warning "+choiceClass+"' id='btn-dialog-choice"+elementIdOfComponentInstanceWrapper+"' data-title='"+choiceText+"'><i class='far fa-meh'></i></button>";
+						
+			if(componentPropertiesObj.nextDialogPositionChain)
+				retHtml += "<button class='btn-icon btn-info btn-next' targetDialogPosition='"+componentPropertiesObj.nextDialogPositionChain+"' id='btn-dialog-nav-next"+elementIdOfComponentInstanceWrapper+"' data-title='" + navigationText  + " / Next'><i class='fas fa-arrow-circle-right'></i></button>";
 
-					retHtml += "</td>" +
-								"<td width='33%'>" +
-									"<a href='#' title='"+HIPI.framework.Utilities.escapeHtml(stateSlicesObj.messageStr)+"' class='btn-dialog-choice "+choiceClass+"' id='btn-dialog-choice"+elementIdOfComponentInstanceWrapper+"'>"+choiceText+"</a>" +
-								"</td>" +
-								"<td width='33%' align='right'>";
-
-									if(componentPropertiesObj.nextDialogPositionChain)
-										retHtml += "<button targetDialogPosition='"+componentPropertiesObj.nextDialogPositionChain+"' id='btn-dialog-nav-next"+elementIdOfComponentInstanceWrapper+"'>" + navigationText  + " / Next</button>";
-
-						retHtml += "</td>" +
-							"</tr>" +
-						"</table>" +
-					"</div>";
+			retHtml += "</div>";
 
 		return retHtml;
 	});

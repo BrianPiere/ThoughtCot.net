@@ -8,11 +8,12 @@ postInit(function(){
 
 	componentObj.addHtmlGenerator(function(elementIdOfComponentInstanceWrapper, componentPropertiesObj, stateSlicesObj){
 
-		var retHtml = "<nav class='tabs-root'>" +
-			"<ul>" +
-					"<li><a class='"+(stateSlicesObj.mainSelectedTab === "dialogs" ? "active-nav" : "inactive-nav")+"' class='inactive-nav' id='nav-dialogs"+elementIdOfComponentInstanceWrapper+"' href='#'>Dialogs</a></li>" +
-					"<li><a class='"+(stateSlicesObj.mainSelectedTab === "map" ? "active-nav" : "inactive-nav")+"' class='inactive-nav' id='nav-map"+elementIdOfComponentInstanceWrapper+"' href='#'>Map</a></li>" +
-					"<li><a class='"+(stateSlicesObj.mainSelectedTab === "contributions" ? "active-nav" : "inactive-nav")+"' class='inactive-nav' id='nav-contributions"+elementIdOfComponentInstanceWrapper+"' href='#'>My Contributions</a></li>" +
+		var retHtml = "<div class='container'>" +
+		"<nav class='tabs-root active-bck'>" +
+			"<ul class=''>" +
+					"<li><a class='"+(stateSlicesObj.mainSelectedTab === "dialogs" ? " btn-icon active" : "btn-icon")+"' data-title='Dialogs' id='nav-dialogs"+elementIdOfComponentInstanceWrapper+"' href='#'><i class='fas fa-comments' ></i></a></li>" +
+					"<li><a class='"+(stateSlicesObj.mainSelectedTab === "map" ? " btn-icon active" : "btn-icon")+"'  data-title='Map' id='nav-map"+elementIdOfComponentInstanceWrapper+"' href='#'><i class='fas fa-map-marked'></i></a></li>" +
+					"<li><a class='"+(stateSlicesObj.mainSelectedTab === "contributions" ? " btn-icon active" : "btn-icon")+"' data-title='My Contributions' id='nav-contributions"+elementIdOfComponentInstanceWrapper+"' href='#'><i class='fas fa-chalkboard-teacher'></i></a></li>" +
 			"</ul>" +
 		"</nav>" +
 		"<div class='nav-bottom-border'></div>"+
@@ -27,7 +28,7 @@ postInit(function(){
 		else
 			throw new Error("Error in <mainTabs>, cannot find a matching tab name: " + stateSlicesObj.mainSelectedTab);
 
-		retHtml += "<section>";
+		retHtml += "<section></div>";
 
 		return retHtml;
 	});

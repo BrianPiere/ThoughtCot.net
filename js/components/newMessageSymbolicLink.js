@@ -17,11 +17,11 @@ postInit(function(){
 		else
 			var addMessageButtnStr = "Search for a Skeptical Response";
 
-		var retHtml = "<form id='form-link-search"+elementIdOfComponentInstanceWrapper+"'>" +
-							"<input type='text' class='new-message-symbolic-link-search' id='new-message-symbolic-link-search"+elementIdOfComponentInstanceWrapper+"'></input> "+
-								"<button type='submit'>"+addMessageButtnStr+"</button> "+
-								"<button type='button' id='btn-cancel-symbolic-link"+elementIdOfComponentInstanceWrapper+"'>Cancel</button>"+
-						"</form>" +
+		var retHtml = "<div class='alert-message sm-top'><form class='text-left xs-left xs-right' id='form-link-search"+elementIdOfComponentInstanceWrapper+"'>" +
+							"<input type='text' class='new-message-symbolic-link-search input-field input-block-sm' id='new-message-symbolic-link-search"+elementIdOfComponentInstanceWrapper+"'></input> "+
+							"<button class='btn btn-primary btn-inline btn-block-sm' type='submit'>"+addMessageButtnStr+"</button> "+
+							"<button class='btn btn-danger btn-inline btn-block-sm' type='button' id='btn-cancel-symbolic-link"+elementIdOfComponentInstanceWrapper+"'>Cancel</button>"+
+						"</form></div>" +
 						"<div class='symbolic-link-search-results' id='symbolic-link-search-results"+elementIdOfComponentInstanceWrapper+"'>" + 
 						"</div>";
 

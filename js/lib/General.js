@@ -68,13 +68,13 @@ General.getHumanReadableLinkingArrayDescription = function(linkingArr){
 
 			// Don't separate the CANT from the CUZ.
 			if(!contradictionSeparatorEncountered || isLoopOnCantVersusCuz)
-				retStr += "\n | ";
+				retStr += " | ";
 			else
 				retStr += " ";
 		}
 
 		if(contradictionSeparatorEncountered)
-			retStr += isLoopOnCantVersusCuz ? "(CANT) \n" : "\n(CUZ) \n";
+			retStr += isLoopOnCantVersusCuz ? "(CANT) " : "(CUZ) ";
 
 		if(typeof loopDesc !== "string")
 			throw new Error("Error in General.getHumanReadableLinkingArrayDescription. The link element is not of type string: ", linkingArr);

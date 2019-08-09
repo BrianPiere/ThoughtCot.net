@@ -10,10 +10,10 @@ postInit(function(){
 	componentObj.addHtmlGenerator(function(elementIdOfComponentInstanceWrapper, componentPropertiesObj, stateSlicesObj){
 
 		var retHtml = "<div class='dialogs-container'>" +
-						"<h2>" + HIPI.framework.Utilities.escapeHtml(componentPropertiesObj.domain) + ": Base Messages</h2>\n";
+						"<h3 class='sm-top hidden'>" + HIPI.framework.Utilities.escapeHtml(componentPropertiesObj.domain) + ": Base Messages</h3>\n";
 
 		if(stateSlicesObj.baseDialogExist){
-			retHtml += "<span class='dialog-base-status-bar' id='status-bar-parent-address'></span>";;
+			retHtml += "<span class='dialog-base-status-bar' id='status-bar-parent-address'></span>";
 			retHtml += "<dialogSorter domain='"+componentPropertiesObj.domain+"' dialogPositionChain=''></dialogSorter>";
 		}
 		else{

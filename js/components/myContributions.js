@@ -4,28 +4,55 @@ postInit(function(){
 
 	var componentObj = new HIPI.framework.Component();
 
+	var classLevel = '';
+
 	componentObj.defineHtmlElementSelector("myContributions");
 	componentObj.defineComponentPropName("domain");
 
+	
 	componentObj.addHtmlGenerator(function(elementIdOfComponentInstanceWrapper, componentPropertiesObj, stateSlicesObj){
 
+		if(Math.round(stateSlicesObj.trustRatio * 100) > 70)
+			classLevel = 'success';
+		else if (Math.round(stateSlicesObj.trustRatio * 100) > 40)
+			classLevel = 'warning';
+		else
+			classLevel = 'danger';
+
 		if(!stateSlicesObj.allContributionsArr.length)
-			return "<p>You haven't added any messages or contradictions using this computer on the selected domain.</p> <p>(Tip): You can transfer your contributions between machines by copying the file named &quot;"+HIPI.framework.AppState.urlToPrivateJsonStore+"&quot;.</p>";
+			return "<div class='alert-message sm-top sm-btm'><p class='message-content'>You haven't added any messages or contradictions using this computer on the selected domain.<br />(Tip): You can transfer your contributions between machines by copying the file named &quot;"+HIPI.framework.AppState.urlToPrivateJsonStore+"&quot;.</p></div>";
 
-		var retHtml = "<div class='trust-ratio-container'><label class='trust-ratio-label'>My Trust Ratio:</label> " + Math.round(stateSlicesObj.trustRatio * 100) + "%</div>";
+		var retHtml =   "<div class='flex-row'>" + 
+							"<div class='col-flex-4 sm-btm sm-top no-top-sm'>" + 
+								"<div class='rate-wrapper light-blue-bck'>" +
+									"<div class='trust-ratio-container " + classLevel + "'>" + 
+										"<label class='trust-ratio-label'>My Trust Ratio:</label>" +
+										"<span class='trust-rate'>" + Math.round(stateSlicesObj.trustRatio * 100) + "%</span>" + 
+										"<div class='progress-bar-wrapper'>" +
+											"<div class='progress-bar' data-percentage='" + Math.round(stateSlicesObj.trustRatio * 100) + "%'>" +
+											"<div class='progress-bar-pointer' style='left:" + Math.round(stateSlicesObj.trustRatio * 100) + "%'><i class='fas fa-map-marker'></i></div>" +
+											"</div>" +
+										"</div>" + 
+									"</div>" +
+								"</div>" + 
+							"</div>";
 
-		retHtml += "<ul>" + 
-						"<li>Message Count :-) " + stateSlicesObj.messageCountTrusting + "</li>" +
-						"<li>Message Count )-: " + stateSlicesObj.messageCountSkeptical + "</li>" +
-						"<li>Contradicted Messages: " + stateSlicesObj.contradictedMessages + "</li>" +
-						"<li>Missing Messages: " + stateSlicesObj.missingMessages + "</li>" +
-					"</ul>"+
-					"<ul>"+
-						"<li>Contradiction Count :-) " + stateSlicesObj.contradictionCountTrusting + "</li>" +
-						"<li>Contradiction Count )-: " + stateSlicesObj.contradictionCountSkeptical + "</li>" +
-						"<li>Contradicted Contradictions: " + stateSlicesObj.contradictedContradictions + "</li>" +
-						"<li>Missing Contradictions: " + stateSlicesObj.missingContradictions + "</li>" +
-					"</ul>";
+		retHtml += "<div class='col-flex-8 sm-top sm-btm no-top-sm'>" +
+						"<div class='contributions-properties-details light-gray-bck'>" + 
+						"<ul class='flex-row'>" + 
+							"<li class='col-flex-6'><strong>Message Count:</strong> " + stateSlicesObj.messageCountTrusting + "</li>" +
+							"<li class='col-flex-6'><strong>Message Count:</strong> " + stateSlicesObj.messageCountSkeptical + "</li>" +
+							"<li class='col-flex-6'><strong>Contradicted Messages:</strong> " + stateSlicesObj.contradictedMessages + "</li>" +
+							"<li class='col-flex-6'><strong>Missing Messages:</strong> " + stateSlicesObj.missingMessages + "</li>" +
+						"</ul>"+
+						"<ul class='flex-row'>"+
+							"<li class='col-flex-6'><strong>Contradiction Count:</strong> " + stateSlicesObj.contradictionCountTrusting + "</li>" +
+							"<li class='col-flex-6'><strong>Contradiction Count:</strong> " + stateSlicesObj.contradictionCountSkeptical + "</li>" +
+							"<li class='col-flex-6'><strong>Contradicted Contradictions:</strong> " + stateSlicesObj.contradictedContradictions + "</li>" +
+							"<li class='col-flex-6'><strong>Missing Contradictions:</strong> " + stateSlicesObj.missingContradictions + "</li>" +
+						"</ul></div>" + 
+						"</div>" + 
+					"</div>";
 
 		retHtml += "<table cellpadding='2' cellspacing='0' border='1' width='100%' class='my-contributions-table'>" + 
 						"<tr>" +
@@ -62,14 +89,14 @@ postInit(function(){
 			if(loopContributionObj.existsInPublicDatabase){
 
 				if(loopContributionObj.isSkeptical)
-					dataType = ")-: " + dataType;
+					dataType = "<p class='danger'>" + dataType + " <i class='fas fa-thumbs-down'></i></p>";
 				else
-					dataType = ":-) " + dataType;
+					dataType = "<p class='success'>" + dataType + " <i class='fas fa-thumbs-up'></i></p>";
 
 				if(loopContributionObj.isContradiction)
-					statusStr = loopContributionObj.isContradicted ? "Contradicted" : "Valid";
+					statusStr = loopContributionObj.isContradicted ? "<p class='danger'>Contradicted</p>" : "<p class='success'>Valid</p>";
 				else
-					statusStr = loopContributionObj.isContradicted ? "Contradicted" : loopContributionObj.answeredStatus;
+					statusStr = loopContributionObj.isContradicted ? "<p class='danger'>Contradicted</p>" : "<p class='success'>" + loopContributionObj.answeredStatus + "</p>";
 
 				contradictedIndicatorClass = loopContributionObj.isContradicted ? "contradicted-contribution-row" : "";
 
@@ -89,7 +116,7 @@ postInit(function(){
 					connectionsHTML = "Link Deletion Unsupported";
 
 				if(!connectionsHTML)
-					connectionsHTML = "<button class='delete-leaf-contribution' link-json='"+HIPI.framework.Utilities.escapeHtml(JSON.stringify(loopContributionObj.link))+"'>Delete</button>";
+					connectionsHTML = "<button class='btn btn-danger btn-block delete-leaf-contribution' link-json='"+HIPI.framework.Utilities.escapeHtml(JSON.stringify(loopContributionObj.link))+"'>Delete</button>";
 			}
 			else{
 				var existsInDatabaseClassName = "not-exists-contribution-row";

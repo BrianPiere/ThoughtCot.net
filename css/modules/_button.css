@@ -1,0 +1,222 @@
+/* Button CSS */
+
+.btn{
+  border-radius: 0px;
+  font-size: 16px;
+  cursor: pointer;
+  line-height: 40px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin-left: .5em;
+  margin-right: .5em;
+  height: 44px;
+  z-index: 51;
+  padding-top: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 600;
+  vertical-align: middle;
+  display: block;
+}
+
+.btn-block{
+  width: 100%;
+  margin: 0;
+  min-width: 70px;
+  max-width: 210px;
+}
+
+@media screen and (min-width: 992px) {
+  .btn.btn-lg{
+    width: 300px;
+    height: 64px;
+    line-height: 64px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .btn.btn-lg{
+    width: 250px;
+    height: 54px;
+    line-height: 54px;
+  }
+  .btn-center-sm{
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.btn-inline{
+  display: inline-block;
+}
+
+.btn-icon{
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  margin: 10px 5px 3px 5px;
+  border: 1px solid white;
+  position:relative;
+  color: white;
+}
+
+.btn-icon.active{
+  color: #3d81ff;
+  background: white;
+}
+
+.btn-icon:after{
+  content: attr(data-title);
+  display: none;
+  position: absolute;
+  left: 0;
+  top: -38px;
+  color: #444;
+  border: 1px solid;
+  border-radius: 5px 5px 5px 0;
+  font-size: 15px;
+  padding: 5px 10px;
+  z-index: 100;
+  background: white;
+  line-height: 24px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+.btn-icon:hover:after{
+  display: block;
+}
+
+.btn-icon i{
+  font-size: 20px;
+  line-height: 35px;
+  width: 35px;
+}
+
+.btn.btn-primary{
+  color: #ffffff;
+  background: #3d81ff;
+  background-image: none;
+  box-shadow: none;
+  border: #3d81ff;
+}
+
+.btn.btn-secondary{
+  color: #3d81ff;
+  background: #eee;
+  background-image: none;
+  box-shadow: none;
+  border: #eee;
+}
+
+.btn-primary:hover{
+  background: #003FB4;
+}
+
+.btn-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.btn-warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+
+.btn-danger{
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.no-background{
+  background: transparent;
+  color: #3d81ff;
+  border: 2px solid #3d81ff;
+  line-height: 40px;
+}
+
+.btn.no-border{
+  background: transparent;
+  border: none;
+  line-height: 40px;
+}
+
+.btn.no-background:hover{
+  background: #3d81ff;
+  color: #ffffff;
+}
+
+.btn.btn-inline{
+  display: inline-block;
+}
+
+.btn-info{
+  color: #0c5460;
+  background-color: #d1ecf1;
+  border-color: #bee5eb;
+  position: relative;
+}
+
+.btn.btn-prev:before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 20px;
+  position: absolute;
+  left: 9px;
+  top: 3px;
+  content: "\f104";
+}
+
+.btn.btn-next:before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 20px;
+  position: absolute;
+  right: 9px;
+  top: 3px;
+  content: "\f105";
+}
+
+@media screen and (min-width: 992px) {
+  .btn{
+    min-width: 210px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .btn{
+    font-size: 14px;
+  }
+  .btn-icon{
+    height: 36px;
+    padding: 0;
+  }
+  .btn-block-sm{
+    width: 100%;
+    margin: 5px 0;
+  }
+  .btn-icon:after{
+    position: relative;
+    background: none;
+    border: none;
+    display: inline-block;
+    top: -1px;
+    font-size: 14px;
+    letter-spacing: -.8px;
+    padding-left: 5px;
+    color: white;
+  }
+  .btn-icon:hover:after {
+    display: inline-block;
+  }
+  .btn-info:after, .btn-warning:after, .btn-icon.active:after, .btn-danger:after, .btn-success:after{
+    color: black;
+  }
+  .btn-icon i{
+    font-size: 17px;
+    line-height: 35px;
+    width: 28px;
+  }
+}
+
