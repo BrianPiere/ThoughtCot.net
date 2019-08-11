@@ -213,8 +213,8 @@ button:hover {
 .dialog-window {
 
 	position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 1.5em;
+    /***transform: translateY(-50%);***/
     left: -0.9em;
     z-index: 100;
     background-color: white;
