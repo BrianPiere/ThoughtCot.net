@@ -15,11 +15,15 @@ postInit(function(){
 			var choiceText = "Agree";
 			var dialogWrapperClass = "skeptical-dialog";
 			var navigationText = "Disagree";
+			var optionClass = "btn-success";
+			var renderHtml = "<i class='far fa-thumbs-up'></i>";
 		}
 		else{
 			var choiceText = "Disagree or Unsure";
 			var dialogWrapperClass = "trusting-dialog";
 			var navigationText = "Agree";
+			var optionClass = "btn-warning";
+			var renderHtml = "<i class='far fa-meh'></i>"
 		}
 
 		if(stateSlicesObj.doesPerpendicularMessageExistFlag)
@@ -32,7 +36,7 @@ postInit(function(){
 			if(componentPropertiesObj.previousDialogPositionChain)
 				retHtml += "<button class='btn-icon btn-info btn-prev' targetDialogPosition='"+componentPropertiesObj.previousDialogPositionChain+"' id='btn-dialog-nav-previous"+elementIdOfComponentInstanceWrapper+"' data-title='"+navigationText+" / Previous'><i class='fas fa-arrow-circle-left'></i></button>";
 
-			retHtml += "<button title='"+HIPI.framework.Utilities.escapeHtml(stateSlicesObj.messageStr)+"' class='btn-icon btn-warning "+choiceClass+"' id='btn-dialog-choice"+elementIdOfComponentInstanceWrapper+"' data-title='"+choiceText+"'><i class='far fa-meh'></i></button>";
+			retHtml += "<button title='"+HIPI.framework.Utilities.escapeHtml(stateSlicesObj.messageStr)+"' class='btn-icon " + optionClass + "  " + choiceClass + "' id='btn-dialog-choice"+elementIdOfComponentInstanceWrapper+"' data-title='"+choiceText+"'>"+ renderHtml +"</button>";
 						
 			if(componentPropertiesObj.nextDialogPositionChain)
 				retHtml += "<button class='btn-icon btn-info btn-next' targetDialogPosition='"+componentPropertiesObj.nextDialogPositionChain+"' id='btn-dialog-nav-next"+elementIdOfComponentInstanceWrapper+"' data-title='" + navigationText  + " / Next'><i class='fas fa-arrow-circle-right'></i></button>";
