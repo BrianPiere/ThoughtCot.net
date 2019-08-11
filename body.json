@@ -1,1 +1,409 @@
-{}
+{
+	"domains": [
+		{
+			"domainName": "About The HIPI",
+			"myMessages": [
+				{
+					"date": 1563911733155,
+					"link": [
+						"asdfadsff"
+					]
+				}
+			],
+			"myContradictions": []
+		},
+		{
+			"domainName": "About Thought Cot",
+			"myMessages": [
+				{
+					"date": 1563912840005,
+					"link": [
+						"testing 21"
+					]
+				},
+				{
+					"date": 1563913554076,
+					"link": [
+						"Since the dawn of time man has e"
+					]
+				},
+				{
+					"date": 1563913577208,
+					"link": [
+						"Since the dawn of time man has e",
+						"What is Thought Cot?"
+					]
+				},
+				{
+					"date": 1563913739975,
+					"link": [
+						"Since the dawn of time man has e",
+						"What is Thought Cot?",
+						"Thought Cot is a DAPP (decentral"
+					]
+				},
+				{
+					"date": 1563913805545,
+					"link": [
+						"Since the dawn of time man has e",
+						"What is Thought Cot?",
+						"Thought Cot is a DAPP (decentral",
+						"How Do Trust and Tokens Relate?"
+					]
+				},
+				{
+					"date": 1563913904261,
+					"link": [
+						"Since the dawn of time man has e",
+						"What is Thought Cot?",
+						"Thought Cot is a DAPP (decentral",
+						"How Do Trust and Tokens Relate?",
+						"Trust and tokens are the moving "
+					]
+				},
+				{
+					"date": 1563913919648,
+					"link": [
+						"Since the dawn of time man has e",
+						"What is Thought Cot?",
+						"Thought Cot is a DAPP (decentral",
+						"How Do Trust and Tokens Relate?",
+						"Trust and tokens are the moving ",
+						"What Are the Two Modes of Dialog"
+					]
+				},
+				{
+					"date": 1563913980261,
+					"link": [
+						"Since the dawn of time man has e",
+						"What is Thought Cot?",
+						"Thought Cot is a DAPP (decentral",
+						"How Do Trust and Tokens Relate?",
+						"Trust and tokens are the moving ",
+						"What Are the Two Modes of Dialog",
+						"1. Construction Mode: This is wh"
+					]
+				},
+				{
+					"date": 1563913998330,
+					"link": [
+						"Since the dawn of time man has e",
+						"What is Thought Cot?",
+						"Thought Cot is a DAPP (decentral",
+						"How Do Trust and Tokens Relate?",
+						"Trust and tokens are the moving ",
+						"What Are the Two Modes of Dialog",
+						"1. Construction Mode: This is wh",
+						"How Are Contradictions Recycled "
+					]
+				},
+				{
+					"date": 1563914168401,
+					"link": [
+						"Since the dawn of time man has e",
+						"What is Thought Cot?",
+						"Thought Cot is a DAPP (decentral",
+						"How Do Trust and Tokens Relate?",
+						"Trust and tokens are the moving ",
+						"What Are the Two Modes of Dialog",
+						"1. Construction Mode: This is wh",
+						"How Are Contradictions Recycled ",
+						"Remember that contradictions mus"
+					]
+				},
+				{
+					"date": 1563914258210,
+					"link": [
+						"Since the dawn of time man has e",
+						"What is Thought Cot?",
+						"Thought Cot is a DAPP (decentral",
+						"How Do Trust and Tokens Relate?",
+						"Trust and tokens are the moving ",
+						"What Are the Two Modes of Dialog",
+						"1. Construction Mode: This is wh",
+						"How Are Contradictions Recycled ",
+						"Remember that contradictions mus",
+						"How Does the System Determine Wh"
+					]
+				},
+				{
+					"date": 1563914309875,
+					"link": [
+						"Since the dawn of time man has e",
+						"What is Thought Cot?",
+						"Thought Cot is a DAPP (decentral",
+						"How Do Trust and Tokens Relate?",
+						"Trust and tokens are the moving ",
+						"What Are the Two Modes of Dialog",
+						"1. Construction Mode: This is wh",
+						"How Are Contradictions Recycled ",
+						"Remember that contradictions mus",
+						"How Does the System Determine Wh",
+						"In Assemble Mode there's the con"
+					]
+				},
+				{
+					"date": 1563914330510,
+					"link": [
+						"Since the dawn of time man has e",
+						"What is Thought Cot?",
+						"Thought Cot is a DAPP (decentral",
+						"How Do Trust and Tokens Relate?",
+						"Trust and tokens are the moving ",
+						"What Are the Two Modes of Dialog",
+						"1. Construction Mode: This is wh",
+						"How Are Contradictions Recycled ",
+						"Remember that contradictions mus",
+						"How Does the System Determine Wh",
+						"In Assemble Mode there's the con",
+						"How Can Unanimity Be Achieved Wh"
+					]
+				},
+				{
+					"date": 1563914373862,
+					"link": [
+						"Since the dawn of time man has e",
+						"What is Thought Cot?",
+						"Thought Cot is a DAPP (decentral",
+						"How Do Trust and Tokens Relate?",
+						"Trust and tokens are the moving ",
+						"What Are the Two Modes of Dialog",
+						"1. Construction Mode: This is wh",
+						"How Are Contradictions Recycled ",
+						"Remember that contradictions mus",
+						"How Does the System Determine Wh",
+						"In Assemble Mode there's the con",
+						"How Can Unanimity Be Achieved Wh",
+						"Judges, moderators, jury members"
+					]
+				},
+				{
+					"date": 1563914410467,
+					"link": [
+						"Since the dawn of time man has e",
+						"What is Thought Cot?",
+						"Thought Cot is a DAPP (decentral",
+						"How Do Trust and Tokens Relate?",
+						"Trust and tokens are the moving ",
+						"What Are the Two Modes of Dialog",
+						"1. Construction Mode: This is wh",
+						"How Are Contradictions Recycled ",
+						"Remember that contradictions mus",
+						"How Does the System Determine Wh",
+						"In Assemble Mode there's the con",
+						"How Can Unanimity Be Achieved Wh",
+						"Judges, moderators, jury members",
+						"Would This Methodology Let Voter"
+					]
+				},
+				{
+					"date": 1563914435605,
+					"link": [
+						"Since the dawn of time man has e",
+						"What is Thought Cot?",
+						"Thought Cot is a DAPP (decentral",
+						"How Do Trust and Tokens Relate?",
+						"Trust and tokens are the moving ",
+						"What Are the Two Modes of Dialog",
+						"1. Construction Mode: This is wh",
+						"How Are Contradictions Recycled ",
+						"Remember that contradictions mus",
+						"How Does the System Determine Wh",
+						"In Assemble Mode there's the con",
+						"How Can Unanimity Be Achieved Wh",
+						"Judges, moderators, jury members",
+						"Would This Methodology Let Voter",
+						"Laws and rights are one in the s"
+					]
+				},
+				{
+					"date": 1563914454189,
+					"link": [
+						"Since the dawn of time man has e",
+						"What is Thought Cot?",
+						"Thought Cot is a DAPP (decentral",
+						"How Do Trust and Tokens Relate?",
+						"Trust and tokens are the moving ",
+						"What Are the Two Modes of Dialog",
+						"1. Construction Mode: This is wh",
+						"How Are Contradictions Recycled ",
+						"Remember that contradictions mus",
+						"How Does the System Determine Wh",
+						"In Assemble Mode there's the con",
+						"How Can Unanimity Be Achieved Wh",
+						"Judges, moderators, jury members",
+						"Would This Methodology Let Voter",
+						"Laws and rights are one in the s",
+						"Democracy and System of Laws Hav"
+					]
+				},
+				{
+					"date": 1563914521625,
+					"link": [
+						"Since the dawn of time man has e",
+						"What is Thought Cot?",
+						"Thought Cot is a DAPP (decentral",
+						"How Do Trust and Tokens Relate?",
+						"Trust and tokens are the moving ",
+						"What Are the Two Modes of Dialog",
+						"1. Construction Mode: This is wh",
+						"How Are Contradictions Recycled ",
+						"Remember that contradictions mus",
+						"How Does the System Determine Wh",
+						"In Assemble Mode there's the con",
+						"How Can Unanimity Be Achieved Wh",
+						"Judges, moderators, jury members",
+						"Would This Methodology Let Voter",
+						"Laws and rights are one in the s",
+						"Democracy and System of Laws Hav",
+						"People have a very difficult tim"
+					]
+				},
+				{
+					"date": 1563914577596,
+					"link": [
+						"Since the dawn of time man has e",
+						"What is Thought Cot?",
+						"Thought Cot is a DAPP (decentral",
+						"How Do Trust and Tokens Relate?",
+						"Trust and tokens are the moving ",
+						"What Are the Two Modes of Dialog",
+						"1. Construction Mode: This is wh",
+						"How Are Contradictions Recycled ",
+						"Remember that contradictions mus",
+						"How Does the System Determine Wh",
+						"In Assemble Mode there's the con",
+						"How Can Unanimity Be Achieved Wh",
+						"Judges, moderators, jury members",
+						"Would This Methodology Let Voter",
+						"Laws and rights are one in the s",
+						"Democracy and System of Laws Hav",
+						"People have a very difficult tim",
+						"How Could Unanimity Be Realized "
+					]
+				},
+				{
+					"date": 1563914603090,
+					"link": [
+						"Since the dawn of time man has e",
+						"What is Thought Cot?",
+						"Thought Cot is a DAPP (decentral",
+						"How Do Trust and Tokens Relate?",
+						"Trust and tokens are the moving ",
+						"What Are the Two Modes of Dialog",
+						"1. Construction Mode: This is wh",
+						"How Are Contradictions Recycled ",
+						"Remember that contradictions mus",
+						"How Does the System Determine Wh",
+						"In Assemble Mode there's the con",
+						"How Can Unanimity Be Achieved Wh",
+						"Judges, moderators, jury members",
+						"Would This Methodology Let Voter",
+						"Laws and rights are one in the s",
+						"Democracy and System of Laws Hav",
+						"People have a very difficult tim",
+						"How Could Unanimity Be Realized ",
+						"The short answer is that unanimi"
+					]
+				},
+				{
+					"date": 1563914615900,
+					"link": [
+						"Since the dawn of time man has e",
+						"What is Thought Cot?",
+						"Thought Cot is a DAPP (decentral",
+						"How Do Trust and Tokens Relate?",
+						"Trust and tokens are the moving ",
+						"What Are the Two Modes of Dialog",
+						"1. Construction Mode: This is wh",
+						"How Are Contradictions Recycled ",
+						"Remember that contradictions mus",
+						"How Does the System Determine Wh",
+						"In Assemble Mode there's the con",
+						"How Can Unanimity Be Achieved Wh",
+						"Judges, moderators, jury members",
+						"Would This Methodology Let Voter",
+						"Laws and rights are one in the s",
+						"Democracy and System of Laws Hav",
+						"People have a very difficult tim",
+						"How Could Unanimity Be Realized ",
+						"The short answer is that unanimi",
+						"How Could Unanimity Be Realized "
+					]
+				},
+				{
+					"date": 1563914679034,
+					"link": [
+						"Since the dawn of time man has e",
+						"What is Thought Cot?",
+						"Thought Cot is a DAPP (decentral",
+						"How Do Trust and Tokens Relate?",
+						"Trust and tokens are the moving ",
+						"What Are the Two Modes of Dialog",
+						"1. Construction Mode: This is wh",
+						"How Are Contradictions Recycled ",
+						"Remember that contradictions mus",
+						"How Does the System Determine Wh",
+						"In Assemble Mode there's the con",
+						"How Can Unanimity Be Achieved Wh",
+						"Judges, moderators, jury members",
+						"Would This Methodology Let Voter",
+						"Laws and rights are one in the s",
+						"Democracy and System of Laws Hav",
+						"People have a very difficult tim",
+						"How Could Unanimity Be Realized ",
+						"The short answer is that unanimi",
+						"How Could Unanimity Be Realized ",
+						"If a personal opinion or prefere"
+					]
+				},
+				{
+					"date": 1563914718072,
+					"link": [
+						"Since the dawn of time man has e",
+						"What is Thought Cot?",
+						"Thought Cot is a DAPP (decentral",
+						"How does Thought Cot Make Money?"
+					]
+				},
+				{
+					"date": 1563914750356,
+					"link": [
+						"Since the dawn of time man has e",
+						"What is Thought Cot?",
+						"Thought Cot is a DAPP (decentral",
+						"How does Thought Cot Make Money?",
+						"Unlike cloud applications, in wh"
+					]
+				},
+				{
+					"date": 1563914776864,
+					"link": [
+						"Since the dawn of time man has e",
+						"What is Thought Cot?",
+						"Thought Cot is a DAPP (decentral",
+						"How does Thought Cot Make Money?",
+						"Unlike cloud applications, in wh",
+						"What is Thought Cot's Marketing "
+					]
+				},
+				{
+					"date": 1563915127936,
+					"link": [
+						"Since the dawn of time man has e",
+						"What is Thought Cot?",
+						"Thought Cot is a DAPP (decentral",
+						"How does Thought Cot Make Money?",
+						"Unlike cloud applications, in wh",
+						"What is Thought Cot's Marketing ",
+						"StackExchange and Reddit receive"
+					]
+				}
+			],
+			"myContradictions": []
+		}
+	],
+	"userSettings": {
+		"showEditButtons": true
+	}
+}
