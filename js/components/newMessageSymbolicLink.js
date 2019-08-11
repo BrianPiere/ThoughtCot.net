@@ -147,12 +147,12 @@ postInit(function(){
 						buttonText = "Link Already Established";
 					}
 
-					searchResultsHtml += "<div link-row-position='"+matchingPositionCounter+"' link-dialog-position-chain='"+stateSlicesObj.messageObjArr[i].dialogPosChain+"' class='link-search-result-row"+linkWarningClassName+"'>"+
+					searchResultsHtml += "<div link-row-position='"+matchingPositionCounter+"' link-dialog-position-chain='"+stateSlicesObj.messageObjArr[i].dialogPosChain+"' class='link-search-result-row"+linkWarningClassName+" light-gray-bck'>"+
 												"<div class='link-search-result-row-message-preview'>" +
 													HIPI.framework.Utilities.htmlizeStringWithLineBreaks(stateSlicesObj.messageObjArr[i].message)+
 												"</div>" +
 												"<div class='link-search-result-row-commands' id='link-search-result-command-row-"+matchingPositionCounter+"-"+elementIdOfComponentInstanceWrapper+"'>" + 
-													"<button "+buttonDisabled+" link-dialog-position-chain='"+stateSlicesObj.messageObjArr[i].dialogPosChain+"' id='link-search-result-button-"+matchingPositionCounter+"-"+elementIdOfComponentInstanceWrapper+"'>"+buttonText+"</button>" + 
+													"<button "+buttonDisabled+" link-dialog-position-chain='"+stateSlicesObj.messageObjArr[i].dialogPosChain+"' class='btn btn-primary' id='link-search-result-button-"+matchingPositionCounter+"-"+elementIdOfComponentInstanceWrapper+"'>"+buttonText+"</button>" + 
 												"</div>" + 
 											"</div>";
 					matchingPositionCounter++;
@@ -162,7 +162,7 @@ postInit(function(){
 			if(matchingPositionCounter === 0)
 				document.getElementById('symbolic-link-search-results'+elementIdOfComponentInstanceWrapper).innerHTML = "No matches found."
 			else
-				document.getElementById('symbolic-link-search-results'+elementIdOfComponentInstanceWrapper).innerHTML = "<h2>Search Results</h2>" + searchResultsHtml;
+				document.getElementById('symbolic-link-search-results'+elementIdOfComponentInstanceWrapper).innerHTML = "<div class='xs-left xs-right'><h4 class='title'>Search Results</h4></div>" + searchResultsHtml;
 
 			var linkSearchResultsCollection = document.getElementById(elementIdOfComponentInstanceWrapper).getElementsByClassName('link-search-result-row');
 

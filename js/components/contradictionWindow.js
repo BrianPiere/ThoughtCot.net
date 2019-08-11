@@ -12,13 +12,13 @@ postInit(function(){
 
 		if(HIPI.lib.Contradictions.isContradictionLevelSkeptical(componentPropertiesObj.contradictionPositionChain)){
 
-			var closeButtonText = "";
+			var closeButtonText = "<i class='fas fa-times'></i>";
 			var closeButtonTitle = "Concede and close this offensive contradiction window. \nContradictions at odd levels aim to contradict the underlying dialog.";
 			var wrapperClassName = "skeptical-contradiction";
 		}
 		else{
 
-			var closeButtonText = "";
+			var closeButtonText = "<i class='fas fa-times'></i>";
 			var closeButtonTitle = "Concede and close this defensive contradiction window. \nContradictions at even levels support the underlying dialog.";
 			var wrapperClassName = "trusting-contradiction";
 		}

@@ -190,6 +190,7 @@ button:hover {
 	height: 15em;
     width: calc(100% - 20px);
     padding: 10px;
+    border: 1px solid #ddd;
 }
 
 .dialog-wrapper {
@@ -307,12 +308,18 @@ button:hover {
 
 .btn-close-contradiction-window {
 	float: right;
+    background: no-repeat;
+    border: none;
+    font-size: 22px;
 }
 
 .link-search-result-row {
 	padding: 0.5em;
-	border: 1px black dotted;
-	margin: 0.5em;
+	margin: 0 0.5em;
+}
+
+.link-search-result-row + .link-search-result-row {
+	border-top: 1px solid #ddd;
 }
 
 .link-search-result-row:hover {
@@ -327,8 +334,8 @@ button:hover {
 
 .link-search-result-row-message-preview {
 	width: 100%;
-	border: 1px solid #999;
 	overflow: auto;
+	background: #fff;
 	max-height: 200px;
 	padding: 0.5em;
 	box-sizing: border-box;
@@ -492,17 +499,15 @@ button:hover {
 }
 
 .user-settings-menu {
-	position: absolute;
-	display: none;
-	right: 0px;
-	width: 250px;
-	border: 1px solid black;
-	background-color: #EEE;
-	color: black;
-
-	-webkit-box-shadow: 1px 3px 7px 1px rgba(68,68,68,0.6); 
-	-moz-box-shadow:    1px 3px 7px 1px rgba(68,68,68,0.6);
-	box-shadow:         1px 3px 7px 1px rgba(68,68,68,0.6);
+    position: absolute;
+    display: none;
+    right: -10px;
+    width: 250px;
+    top: 60px;
+    border: 0;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px rgba(0,0,0,.10);
 }
 
 .user-setting-row {
@@ -684,5 +689,19 @@ button:hover {
 	}
 	.map-links-checkbox-wrapper {
 	    margin-right: 20px;
+	}
+	.tabs-root{
+		padding: 0 5px;
+	}
+	.user-settings-menu {
+	    position: fixed;
+	    display: none;
+	    right: 0px;
+	    width: 100%;
+	    top: 50px;
+	    border: 0;
+	    background-color: white;
+	    color: black;
+	    box-shadow: 0 0 10px rgba(0,0,0,.10);
 	}
 }
