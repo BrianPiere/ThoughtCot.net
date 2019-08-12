@@ -70,12 +70,11 @@
   display: inline-block;
   text-align: left;
   white-space: nowrap;
-  padding: 0 40px;
 }
 
 .nav-wrapper .nav-logo-container svg, .nav-wrapper .nav-logo-container img{
-  height: 48px;
-  width: 165px;
+  width: 235px;
+  margin-top: 5px;
   vertical-align: middle;
 }
 

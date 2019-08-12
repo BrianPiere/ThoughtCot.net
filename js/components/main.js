@@ -11,7 +11,7 @@ postInit(function(){
 		var retStr = "<header >" +
 					"<div class='nav-wrapper'>" +
 					"<nav class='nav-logo-container'>" +
-					"<div class='logo'><img src='images/svg/logo.svg' /></div>" +
+					"<div class='logo'><img src='images/thoughtcot-logo-wht.png' /></div>" +
 					"</nav>" +
 					"<nav class='nav-menu-container'>" +
 					"<a class='nav-item link2 inverted'>ABOUT US</a>" +
