@@ -25,7 +25,7 @@ postInit(function(){
 							"<button class='btn-icon btn-danger btn-block-sm' id='btn-contradict-dialog"+elementIdOfComponentInstanceWrapper+"' data-title='" + (stateSlicesObj.isContradicted ? "Restore / Un-Contradict" : "Remove / Contradict" ) + "'><i class='far fa-minus-square'></i></button>";
 
 						if(stateSlicesObj.userOwnsMessage)
-								retHtml += "<button class='btn-icon btn-warning "+(stateSlicesObj.userCanEditMessage ? "" : 'edit-message-disabled')+"' id='btn-edit-dialog"+elementIdOfComponentInstanceWrapper+"' data-title='Edit'><i class='far fa-edit'></i></button>";
+								retHtml += "<button class='btn-icon btn-warning btn-block-sm "+(stateSlicesObj.userCanEditMessage ? "" : 'edit-message-disabled')+"' id='btn-edit-dialog"+elementIdOfComponentInstanceWrapper+"' data-title='Edit'><i class='far fa-edit'></i></button>";
 
 						retHtml += "<button class='btn-icon btn-success btn-block-sm' id='btn-start-new-parent-dialog"+elementIdOfComponentInstanceWrapper+"' data-title='Add Something Better'><i class='far fa-plus-square'></i></button>" + 
 								   "</div>";
