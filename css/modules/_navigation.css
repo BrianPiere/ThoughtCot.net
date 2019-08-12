@@ -79,7 +79,7 @@
 }
 
 .nav-wrapper .nav-menu-container{
-  width: 40%;
+  width: 120px;
   display: inline-block;
 }
 
@@ -110,17 +110,18 @@
   width: auto;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 462px) {
   .nav-wrapper .nav-item{
     width: auto;
     line-height: 64px;
     padding: 0 20px;
     text-align: center;
     display: inline-block;
+    font-size: 16px;
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 462px) {
   .nav-wrapper{
     height: 64px;
   }
@@ -128,7 +129,7 @@
     display: none;
   }
   .mobile-menu-wrapper .nav-item{
-    font-size: 16px;
+    /*font-size: 16px;*/
   }
   header .header-links{
     font-size: 1.1em;
