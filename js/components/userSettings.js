@@ -32,7 +32,7 @@ postInit(function(){
 									"<a href='#' id='create-domain-link"+elementIdOfComponentInstanceWrapper+"'>Create New Domain</a>" +
 								"</div>"+
 								"<div class='user-setting-row hidden-lg'>"+
-									"<a class='#'>About Us</a>" +
+									"<a class='/'>About Us</a>" +
 								"</div>"+
 							"</div>"+
 						"</div>";

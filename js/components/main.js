@@ -11,10 +11,10 @@ postInit(function(){
 		var retStr = "<header >" +
 					"<div class='nav-wrapper'>" +
 					"<nav class='nav-logo-container'>" +
-					"<div class='logo'><img src='images/thoughtcot-logo-wht.png' /></div>" +
+					"<div class='logo'><a href='/'><img src='images/thoughtcot-logo-wht.png' /></a></div>" +
 					"</nav>" +
 					"<nav class='nav-menu-container'>" +
-					"<a class='nav-item link2 inverted'>ABOUT US</a>" +
+					"<a class='nav-item link2 inverted' href='/'>ABOUT US</a>" +
 					"</nav>" +
 					"<select id='domainSelectMenu"+elementIdOfComponentInstanceWrapper+"' class='hidden'>";
 
