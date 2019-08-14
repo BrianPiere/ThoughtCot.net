@@ -122,6 +122,12 @@
 }
 
 @media screen and (max-width: 462px) {
+  .nav-wrapper .nav-logo-container svg, .nav-wrapper .nav-logo-container img{
+    margin-top: 16px;
+  }
+}
+
+@media screen and (max-width: 462px) {
   .nav-wrapper{
     height: 64px;
   }

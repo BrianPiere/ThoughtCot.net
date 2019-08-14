@@ -47,7 +47,7 @@ a{
 
 .light-gray-gradient-bck{
 	position: relative;
-	background: radial-gradient(rgba(226,236,255,.9),rgba(242,246,255,1));
+	background: #eef3ff;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;

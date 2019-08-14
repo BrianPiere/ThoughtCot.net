@@ -60,6 +60,9 @@ section.truth-by-default:before{
 }
 
 @media screen and (max-width: 992px) {
+  section.top-section{
+    margin-top: 55px;
+  }
   section.truth-by-default:before{
     position: absolute;
     font-family: 'Font Awesome 5 Brands';
@@ -118,4 +121,14 @@ section.truth-by-default:before{
 .alert-message .message-content{
   vertical-align: middle;
     display: table-cell;
+}
+
+.cta-section{
+  position: relative;
+}
+
+.cta-section img{
+  position: absolute;
+  width: 100%;
+  margin-top: 30px;
 }

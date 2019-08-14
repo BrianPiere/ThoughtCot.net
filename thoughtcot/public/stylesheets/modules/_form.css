@@ -46,8 +46,12 @@ input.input-field{
   height: 70px;
   color: #fff;
   font-size: 18px;
+  display: inline-block;
+  line-height: 70px;
+  text-align: center;
   font-weight: 500;
   background-color: #0eca7c;
+  position: relative;
   background-image: none;
   border-style: solid;
   border-width: 1px 1px 1px 1px;
