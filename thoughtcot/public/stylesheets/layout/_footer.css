@@ -86,8 +86,16 @@ footer span, footer nav{
     width: 100%;
     margin: 0;
   }
+  footer .copy-wrapper img {
+    float: none;
+    height: 22px;
+    margin-top: 1px;
+    margin: 15px auto 10px;
+    display: inline-block;
+  }
   footer .copy-wrapper svg{
     float: none;
+    display: none;
   }
   footer a, footer span{
     cursor: pointer;
