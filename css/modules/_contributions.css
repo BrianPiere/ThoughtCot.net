@@ -34,8 +34,8 @@
 	.contributions-properties-details {
 	    margin-left: 10px;
 	}
-	.my-contributions-table tr td:first-child, .my-contributions-table tr th:first-child{
-		min-width: 200px;
+	.my-contributions-table tr td:first-child, .my-contributions-table tr th:first-child, .my-contributions-table tr td:last-child, .my-contributions-table tr th:last-child{
+		min-width: 210px;
 		max-width: 300px;
 	} 
 
