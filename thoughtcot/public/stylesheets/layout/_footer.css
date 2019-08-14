@@ -28,9 +28,10 @@ footer .copy-wrapper{
   display: inline-block;
 }
 
-footer .copy-wrapper svg{
+footer .copy-wrapper img{
   float: left;
-  height: 18px;
+  height: 22px;
+  margin-top: 1px;
 }
 
 footer .copy-wrapper p{
