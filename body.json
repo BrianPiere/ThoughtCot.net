@@ -398,9 +398,33 @@
 						"What is Thought Cot's Marketing ",
 						"StackExchange and Reddit receive"
 					]
+				},
+				{
+					"date": 1565742321884,
+					"link": [
+						"Since the dawn of time man has e",
+						"What is Thought Cot?",
+						"Thought Cot is a DAPP (decentral",
+						"How does Thought Cot Make Money?",
+						"Thought Cot could be considered "
+					]
 				}
 			],
-			"myContradictions": []
+			"myContradictions": [
+				{
+					"date": 1565735621949,
+					"link": [
+						"Since the dawn of time man has e",
+						"What is Thought Cot?",
+						"Thought Cot is a DAPP (decentral",
+						"How does Thought Cot Make Money?",
+						"Unlike cloud applications, in wh",
+						"«»",
+						"DAPP's require gas when adding records to the blockchain",
+						"Not all DAPP's require gas to add records onto the blockchain because \"proof of stake\" (as with EOS / TRON) is so much cheaper that many applications let users add records for free."
+					]
+				}
+			]
 		}
 	],
 	"userSettings": {
