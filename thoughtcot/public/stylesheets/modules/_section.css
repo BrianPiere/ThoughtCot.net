@@ -59,6 +59,28 @@ section.truth-by-default:before{
   content: "\f393";
 }
 
+section.thoughtcot-coin{
+  position: relative;
+}
+
+@media screen and (min-width: 992px) {
+  section.thoughtcot-coin:before{
+    position: absolute;
+    background: url(/thoughtcot/public/images/thoughtcotcoin.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: cover;
+    width: 200px;
+    bottom: 45px;
+    opacity: .8;
+    right: 5%;
+    content: '';
+    height: 200px;
+  }
+}
+
+    
+
 @media screen and (max-width: 992px) {
   section.top-section{
     margin-top: 55px;
