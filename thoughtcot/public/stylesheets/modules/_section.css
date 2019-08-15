@@ -68,14 +68,13 @@ section.thoughtcot-coin{
     position: absolute;
     background: url(/thoughtcot/public/images/thoughtcotcoin.png);
     background-repeat: no-repeat;
-    background-position: right bottom;
     background-size: cover;
-    width: 200px;
-    bottom: 45px;
+    width: 250px;
+    bottom: -13px;
     opacity: .8;
-    right: 5%;
+    right: 0;
     content: '';
-    height: 200px;
+    height: 250px;
   }
 }
 
