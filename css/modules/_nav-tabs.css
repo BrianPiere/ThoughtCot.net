@@ -17,6 +17,10 @@
 	background: #f2f6ff;
 }
 
+.no-underline {
+	text-decoration: none;
+}
+
 @media screen and (max-width: 992px) {
   .tabs-nav{
 	height: 46px;

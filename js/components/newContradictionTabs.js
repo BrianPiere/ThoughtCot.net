@@ -21,8 +21,8 @@ postInit(function(){
 
 		var retHtml = "<nav class='tabs-nav'>" +
 						"<ul>" +
-							"<li><a class='btn btn-primary "+(stateSlicesObj.newContradictionSelectedTab === "suggested-contradictions" ? "active-nav" : "inactive-nav")+"' id='nav-new-contradiction-suggestions"+elementIdOfComponentInstanceWrapper+"' href='#'>Suggested <span class='hidden-sm'>Contradictions</span></a></li>" +
-							"<li><a class='btn btn-primary "+(stateSlicesObj.newContradictionSelectedTab === "new-contradiction" ? "active-nav" : "inactive-nav")+"' id='nav-new-contradiction-custom"+elementIdOfComponentInstanceWrapper+"' href='#'><span class='hidden-sm'>Create a</span> New Contradiction</a></li>" +
+							// "<li><a class='btn btn-primary "+(stateSlicesObj.newContradictionSelectedTab === "suggested-contradictions" ? "active-nav" : "inactive-nav")+"' id='nav-new-contradiction-suggestions"+elementIdOfComponentInstanceWrapper+"' href='#'>Suggested <span class='hidden-sm'>Contradictions</span></a></li>" +
+							"<li><a class='btn btn-primary no-underline "+(stateSlicesObj.newContradictionSelectedTab === "new-contradiction" ? "active-nav" : "inactive-nav")+"' id='nav-new-contradiction-custom"+elementIdOfComponentInstanceWrapper+"' href='#'>Create a New Contradiction</a></li>" +
 						"</ul>" +
 						"</nav>" +
 						"<div class='nav-new-contradiction-bottom-border-"+classExtension+"'></div>" +
@@ -49,7 +49,7 @@ postInit(function(){
 		var subArrayRef = HIPI.lib.General.getDialogOrContradictionReference(globalStateObj, componentPropertiesObj.domain, componentPropertiesObj.dialogPositionChain, componentPropertiesObj.contradictionPositionChain);
 
 		if(!subArrayRef.newContradictionSelectedTab)
-			retStateObj.newContradictionSelectedTab = "suggested-contradictions";
+			retStateObj.newContradictionSelectedTab = "new-contradiction";
 		else
 			retStateObj.newContradictionSelectedTab = subArrayRef.newContradictionSelectedTab;
 

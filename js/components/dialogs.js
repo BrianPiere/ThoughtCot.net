@@ -143,7 +143,7 @@ postInit(function(){
 				}
 
 				subArrayRef.showContradictWindow = true;
-				subArrayRef.newContradictionSelectedTab = "suggested-contradictions";
+				subArrayRef.newContradictionSelectedTab = "new-contradiction";
 
 				// If a new Contradiction Window is opened the calling code may pass in an array of Suggested Contradictions (which may have taken a lot of work to produce).
 				// This way the State Extractor can save many cycles in case there are many Contradiction Windows stacked above each other.
