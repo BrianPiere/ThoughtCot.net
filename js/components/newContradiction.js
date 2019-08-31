@@ -17,8 +17,8 @@ postInit(function(){
 							"<div class='new-contradiction-cant' id='new-contradiction-cant"+elementIdOfComponentInstanceWrapper+"'>"+HIPI.framework.Utilities.htmlizeStringWithLineBreaks(stateSlicesObj.textToContradict)+"</div>"+
 							"<input type='hidden' id='new-contradiction-cant-hidden"+elementIdOfComponentInstanceWrapper+"' value='' />" +
 							"<h4 class='title sm-top'>Because ...</h3>" +
-							"<p class='sm-btm'>When you give your reason why, speak in Can't/Because format to achieve maximum effectiveness.  This creates a 2-for-1 inversion which let's you be right about why something else is wrong.</p>" +
-							"<p> EX: <em>You can't say that it's ready for launch because there's still a disagreement about the fuel range.</em></p>" +
+							"<p class='sm-btm'>When you give your reason why, speak in Can't/Because format for maximum effectiveness." +
+							" EX: <em>You can't say that the rocket is ready for launch because there's still a disagreement about the fuel range.</em></p>" +
 							"<textarea class='textarea-new-contradiction-cuz' id='textarea-new-contradiction-cuz"+elementIdOfComponentInstanceWrapper+"'></textarea>"+
 							"<autoComplete elementIdOfInput='textarea-new-contradiction-cuz"+elementIdOfComponentInstanceWrapper+"'></autoComplete>"+
 							"<p class='row xs-top xs-btm'>"+
